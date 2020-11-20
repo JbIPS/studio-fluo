@@ -106,10 +106,11 @@ experience:
 
 education-title: Formation
 education:
-- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-- {name: Optique et électronique, date: '2011', organization: 'Diplôme d'Ingénieur'}
 - {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
 - {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
+#- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
+#- {name: Optique et électronique, date: '2011', organization: 'Diplôme d'Ingénieur'}
+
 
 #-------------------------------
 # Services Section
