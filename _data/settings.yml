@@ -109,7 +109,7 @@ education:
 #- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
 #- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
 - {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-- {name: Optique, date: '2011', organization: 'Diplôme d'Ingénieur'}
+- {name: Optique, date: '2011', organization: 'Diplme d'Ingnieur'}
 
 
 #-------------------------------
@@ -120,7 +120,7 @@ services:
 - {
     name: Identit graphique,
     icon: ti-palette,
-    description: 'Logo, Chartre graphique, Refonte d'identité, Carte de Visite',
+    description: 'Logo, Chartre graphique, Refonte d'identit, Carte de Visite',
     active: # Add true to select section
   }
 - {
