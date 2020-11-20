@@ -106,10 +106,10 @@ experience:
 
 education-title: Formation
 education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-#- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-#- {name: Optique et électronique, date: '2011', organization: 'Diplôme d'Ingénieur'}
+#- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
+#- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
+- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
+- {name: Optique, date: '2011', organization: 'Diplôme d'Ingénieur'}
 
 
 #-------------------------------
@@ -118,7 +118,7 @@ education:
 services-title: Services
 services:
 - {
-    name: Identité graphique,
+    name: Identit graphique,
     icon: ti-palette,
     description: 'Logo, Chartre graphique, Refonte d'identité, Carte de Visite',
     active: # Add true to select section
