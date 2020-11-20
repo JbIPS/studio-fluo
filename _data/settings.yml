@@ -37,7 +37,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Des <br> couleurs <br> dans vos idées
 
 social:
 - {icon: "ti-facebook", link: "#"}
@@ -106,8 +106,8 @@ experience:
 
 education-title: Education
 education:
-- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-- {name: Optique et électronique, date: '2011', organization: 'Diplôme d'Ingénieur'}
+- {name: 'TOSA Illustrator', date: '2020', organization: 'Certification'}
+- {name: 'Optique et électronique', date: '2011', organization: 'Diplôme d'Ingénieur'}
 
 #-------------------------------
 # Services Section
