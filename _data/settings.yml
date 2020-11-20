@@ -106,10 +106,14 @@ experience:
 
 education-title: Formation
 education:
+- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
+- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
+- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
+- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
 #- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
 #- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-- {name: Optique, date: '2011', organization: 'Diplme d'Ingnieur'}
+#- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
+#- {name: Optique, date: '2011', organization: 'Diplme d'Ingnieur'}
 
 
 #-------------------------------
@@ -118,19 +122,19 @@ education:
 services-title: Services
 services:
 - {
-    name: Identit graphique,
+    name: UI Design,
     icon: ti-palette,
     description: 'Logo, Chartre graphique, Refonte d'identit, Carte de Visite',
     active: # Add true to select section
   }
 - {
-    name: Edition Print,
+    name: UX Design,
     icon: ti-vector,
     description: 'Affiche, Flyer, Faire-Part, Brochure',
     active: true # Add true to select section
   }
 - {
-    name: Design d'objet,
+    name: Interactin Design,
     icon: ti-panel,
     description: 'Badge, Sticker, Design textile',
     active: # Add true to select section
