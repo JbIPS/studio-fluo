@@ -1,18 +1,17 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: Studio Fluo
 logo: 
-author: themefisher
+author: Studio Fluo
 description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+email: flora@richardet.fr
+phone: +33 6 83 65 31 74
+address: Villeurbanne
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
 - {name: About, link: '/about'}
-- {name: Blog, link: '/blog'}
 - {name: Portfolio, link: '/portfolio'}
 - {name: Contact, link: '/contact'}
 
@@ -52,8 +51,7 @@ social:
 
 # About Section
 blurb:
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
+  Passionnée de lumière. Le nom de mon studio vient de mon expérience dans la fluorescence ! Scientifique de formation j'ai changé de voie pour donner du sens à mon travail et exprimer ma créativité.
 blurb-btn-link: '/about'
 blurb-btn-name: know more
 
@@ -62,42 +60,34 @@ blurb-btn-name: know more
 
 # Work Process Section
 work-process:
-  - title : "Research and Plan"
+  - title : "Les racines"
     icon : "assets/images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "Je suis à l'écoute pour comprendre vos besoins et cerner votre identité."
     
-  - title : "Design and Develop"
+  - title : "La graine"
     icon : "assets/images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "Je vous propose des pistes créatives inventives."
     
-  - title : "Deliver"
+  - title : "L'écolosion"
     icon : "assets/images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "Je vous accompagne jusqu'au lancement en faisant appel aux bons partenaires."
 
 
 # My Team Section
 team:
-  - title : "Jack Schenziwe"
+  - title : "Flavia Ribes"
     image : "assets/images/team/member-1.png"
-    designation : "Project Manager"
+    designation : "Facilitatrice"
     
-  - title : "Julias Carlie"
-    image : "assets/images/team/member-2.png"
-    designation : "Web Developer"
-    
-  - title : "John Doe"
-    image : "assets/images/team/member-3.png"
-    designation : "Designer"
-
 
 #-------------------------------
 # Skills Section
 
 skills-title: Skills
 skills:
-- {name: Web Design, color: '#fdb157', value: '90%'}
-- {name: Logo Design, color: '#9473e6', value: '60%'}
-- {name: After Effects, color: '#bdecf6', value: '80%'}
+- {name: Suite Adobe, color: '#fdb157', value: '90%'}
+- {name: Empathie, color: '#9473e6', value: '60%'}
+- {name: After Effects, color: '#bdecf6', value: '90%'}
 - {name: Web App, color: '#ffbcaa', value: '70%'}
 
 
@@ -116,11 +106,8 @@ experience:
 
 education-title: Education
 education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
-- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
-
+- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
+- {name: Optique et électronique, date: '2011', organization: 'Diplôme d'Ingénieur'}
 
 #-------------------------------
 # Services Section
@@ -128,21 +115,21 @@ education:
 services-title: Services
 services:
 - {
-    name: UI Design,
+    name: Identité graphique,
     icon: ti-palette,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: 'Logo, Chartre graphique, Refonte d'identité, Carte de Visite',
     active: # Add true to select section
   }
 - {
-    name: UX Design,
+    name: Edition Print,
     icon: ti-vector,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: 'Affiche, Flyer, Faire-Part, Brochure',
     active: true # Add true to select section
   }
 - {
-    name: Interaction Design,
+    name: Design d'objet,
     icon: ti-panel,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: 'Badge, Sticker, Design textile',
     active: # Add true to select section
   }
 
@@ -172,15 +159,11 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
+    title : "Identité Graphique",
     type : "design"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
-  }
-- {
-    title : "ILLUSTRATION",
+    title : "Illustration",
     type : "illustration"
   }
 
@@ -191,21 +174,12 @@ portfolio-items:
      - type: "design"
      - type: "illustration"
       
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
       - type: "illustration"
       
-  - image : "assets/images/portfolio/item-6.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "branding"
       
   - image : "assets/images/portfolio/item-8.png"
     url: "#"
@@ -217,18 +191,7 @@ portfolio-items:
     portfolio-type:
       - type: "design"
       
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
-      
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
-      
+    
   - image : "assets/images/portfolio/item-7.png"
     url: "#"
     portfolio-type:
@@ -239,22 +202,17 @@ portfolio-items:
 # Testimonials Section
 
 testimonial-items:
-  - name: "Jesica Gomez"
+  - name: "Robin Gueguen"
     image: "assets/images/testimonial/client-1.png"
     designation : "CEO, Funder"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    content : "<strong> C'est vraiment nickel.</strong> Tu vas devenir ma graphiste officielle :)"
     
-  - name: "Jesica Gomez"
+  - name: "Flavia Ribes"
     image: "assets/images/testimonial/client-1.png"
     designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    content: "[09:23, 08/10/2020] Merci merci 🙏 <strong> Vraiment c'est tout ce que j'attendai </strong>"
     
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-
+ 
 #-------------------------------
 # Client Slider Section
 
@@ -293,4 +251,4 @@ client-slider-items:
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: flora@richardet.fr
