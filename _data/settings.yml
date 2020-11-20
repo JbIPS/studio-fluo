@@ -11,9 +11,12 @@ address: Villeurbanne
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
-- {name: About, link: '/about'}
-- {name: Portfolio, link: '/portfolio'}
-- {name: Contact, link: '/contact'}
+- name: About
+  link: /about
+- name: Portfolio
+  link: /portfolio
+- name: Contact
+  link: /contact
 
 
 #-------------------------------
@@ -40,10 +43,14 @@ hero:
   hero-title: Des <br> couleurs <br> dans vos idées
 
 social:
-- {icon: "ti-facebook", link: "#"}
-- {icon: "ti-instagram", link: "#"}
-- {icon: "ti-dribbble", link: "#"}
-- {icon: "ti-twitter", link: "#"}
+- icon: ti-facebook
+  link: "#"
+- icon: ti-instagram
+  link: "#"
+- icon: ti-dribbble
+  link: "#"
+- icon: ti-twitter
+  link: "#"
 
 
 #-------------------------------
@@ -85,10 +92,18 @@ team:
 
 skills-title: Skills
 skills:
-- {name: Suite Adobe, color: '#fdb157', value: '90%'}
-- {name: Empathie, color: '#9473e6', value: '60%'}
-- {name: After Effects, color: '#bdecf6', value: '90%'}
-- {name: Web App, color: '#ffbcaa', value: '70%'}
+- name: Suite Adobe
+  color: '#fdb157'
+  value: '90%'
+- name: Empathie
+  color: '#9473e6'
+  value: '60%'
+- name: After Effects
+  color: '#bdecf6'
+  value: '90%'
+- name: Web App
+  color: '#ffbcaa'
+  value: '70%'
 
 
 #-------------------------------
@@ -96,9 +111,18 @@ skills:
 
 experience-title: Experience
 experience:
-- {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
-- {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
-- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
+- name: Junior UX Designer
+  icon: 'icon-1.png'
+  date: 'Jan 2007 - Feb 2009'
+  organization: 'WEBEX'
+- name: UX & UI Designer
+  icon: 'icon-2.png'
+  date: 'Mar 2009 - Aug 2014'
+  organization: 'AUGMEDIX'
+- name: Senior UI Designer
+  icon: 'icon-3.png'
+  date: 'Sep 2014 - Present'
+  organization: 'THEMEFISHER'
 
 
 #-------------------------------
@@ -106,14 +130,18 @@ experience:
 
 education-title: Formation
 education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
-- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
-#- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-#- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-#- {name: TOSA Illustrator, date: '2020', organization: 'Certification'}
-#- {name: Optique, date: '2011', organization: 'Diplme d'Ingnieur'}
+- name: Marters in UX Design
+  date: '2006'
+  organization: 'Masassusets Institute of Technology'
+- name: Honours in Fine Arts
+  date: '2004'
+  organization: 'Harvard University'
+- name: Higher Secondary Certificat
+  date: '2000'
+  organization: 'Cardiff School'
+- name: Secondary School Certificate
+  date: '1998'
+  organization: 'Cardiff School'
 
 
 #-------------------------------
@@ -121,26 +149,18 @@ education:
 
 services-title: Services
 services:
-- {
-    name: UI Design,
-    icon: ti-palette,
-    description: 'Logo, Chartre graphique, Refonte d'identit, Carte de Visite',
-    active: # Add true to select section
-  }
-- {
-    name: UX Design,
-    icon: ti-vector,
-    description: 'Affiche, Flyer, Faire-Part, Brochure',
-    active: true # Add true to select section
-  }
-- {
-    name: Interactin Design,
-    icon: ti-panel,
-    description: 'Badge, Sticker, Design textile',
-    active: # Add true to select section
-  }
-
-
+- name: UI Design,
+  icon: ti-palette,
+  description: 'Logo, Chartre graphique, Refonte d'identit, Carte de Visite',
+  active: # Add true to select section
+- name: UX Design,
+  icon: ti-vector,
+  description: 'Affiche, Flyer, Faire-Part, Brochure',
+  active: true # Add true to select section
+- name: Interactin Design,
+  icon: ti-panel,
+  description: 'Badge, Sticker, Design textile',
+  active: # Add true to select section
 
 #-------------------------------
 # Portfolio (Section and Page)
@@ -165,14 +185,10 @@ portfolio-home-items:
 
 # Portfolio Page
 portfolio-label:
-- {
-    title : "Identité Graphique",
-    type : "design"
-  }
-- {
-    title : "Illustration",
-    type : "illustration"
-  }
+- title : "Identité Graphique",
+  type : "design"
+- title : "Illustration",
+  type : "illustration"
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
