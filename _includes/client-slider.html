@@ -1,7 +1,15 @@
-{% if site.data.settings.client-slider-items %}
-<div class="client-logo-slider d-flex align-items-center">
-  {% for slider-item in site.data.settings.client-slider-items %}
-  <a href="{{ slider-item.url }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="{{ site.baseurl }}/{{ slider-item.logo }}" alt="client-logo"></a>
-  {% endfor %}
-</div>
-{% endif %}
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ site.data.clients.title }}</h2>
+      </div>
+    </div>
+    <div class="client-logo-slider d-flex align-items-center">
+      {% for slider-item in site.data.clients.clients %}
+      <a href="{{ slider-item.url }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="{{ site.baseurl }}/{{ slider-item.logo }}" alt="client-logo"></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

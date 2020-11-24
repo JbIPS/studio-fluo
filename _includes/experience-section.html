@@ -1,12 +1,10 @@
-{% if site.data.settings.experience %}
-<!-- experience -->
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ site.data.settings.experience-title }}</h2>
+        <h2 class="section-title">{{ site.data.experiences.title }}</h2>
       </div>
-      {% for experience in site.data.settings.experience %}
+      {% for experience in site.data.experiences.experiences %}
       <div class="col-lg-3 col-md-4 text-center">
         <img src="{{ site.baseurl }}/assets/images/experience/{{ experience.icon }}" alt="{{ site.data.settings.experience-title }} icon">
         <p class="mb-0">{{ experience.date }}</p>
@@ -17,5 +15,3 @@
     </div>
   </div>
 </section>
-<!-- ./experience -->
-{% endif %}

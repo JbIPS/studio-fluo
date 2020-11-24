@@ -1,10 +1,11 @@
 <!-- about -->
 <section class="section">
   <div class="container">
+    {% assign about = site.pages | find: "url", "/about.html" %}
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">{{ site.data.settings.blurb }}</p>
-        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-transparent">{{ site.data.settings.blurb-btn-name }}</a>
+        <p class="font-secondary paragraph-lg text-dark">{{ about.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+        <a href="{{ about.url }}" class="btn btn-transparent">{{ about.button }}</a>
       </div>
     </div>
   </div>

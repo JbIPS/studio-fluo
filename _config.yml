@@ -1,5 +1,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://studiofluo.fr" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -10,6 +10,7 @@ compress_html:
   clippings: all
   comments: all
   startings: [html, head, body]
+page_excerpts: true
 
 # Pages Path
 defaults:
@@ -20,6 +21,11 @@ defaults:
 
 include:
   - _pages
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
 
 sass:
   sass_dir: assets/scss

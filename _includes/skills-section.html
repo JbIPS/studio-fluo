@@ -1,12 +1,10 @@
-{% if site.data.settings.skills %}
-<!-- skills -->
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ site.data.settings.skills-title }}</h2>
+        <h2 class="section-title">{{ site.data.skills.title }}</h2>
       </div>
-      {% for skill in site.data.settings.skills %}
+      {% for skill in site.data.skills.skills %}
       <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="card shadow text-center">
           <div class="position-relative rounded-top progress-wrapper" data-color="{{ skill.color }}">
@@ -21,5 +19,3 @@
     </div>
   </div>
 </section>
-<!-- /skills -->
-{% endif %}

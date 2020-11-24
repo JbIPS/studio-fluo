@@ -1,0 +1,14 @@
+title: Mes services
+services:
+- name: UI Design
+  icon: ti-palette
+  description: Logo, Chartre graphique, Refonte d'identit, Carte de Visite
+  active: # Add true to select section
+- name: UX Design
+  icon: ti-vector
+  description: 'Affiche, Flyer, Faire-Part, Brochure'
+  active: true # Add true to select section
+- name: Interactin Design
+  icon: ti-panel
+  description: 'Badge, Sticker, Design textile'
+  active: # Add true to select section

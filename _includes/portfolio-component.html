@@ -1,0 +1,15 @@
+<div class="col-lg-4 col-6 mb-4 shuffle-item"
+        data-groups='{{ include.item.tags | jsonify}}'>
+	<a href="{{ include.item.url }}">
+		<div class="position-relative rounded hover-wrapper">
+			<img src="{{ site.baseurl }}/{{ include.item.image }}" alt="portfolio-image"
+				class="img-fluid rounded w-100 d-block">
+			<div class="hover-overlay">
+				<div class="hover-content">
+					<h3>{{include.item.title}}</h3>
+					<h4>{{include.item.description}}</h4>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

@@ -8,6 +8,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Yanone';
+  src: url("../fonts/YanoneKaffeesatz-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Young';
+  src: url("../fonts/Young.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Young';
+  src: url("../fonts/Young_italic.ttf") format("truetype");
+  font-style: italic;
+}
+
 body {
   line-height: 1.2;
   font-family: $primary-font;
@@ -27,10 +43,15 @@ p, .paragraph {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
   color: $text-color-dark;
   font-family: $secondary-font;
   line-height: 1.2;
+}
+
+h3,h4,h5,h6 {
+  color: $gray;
+  font-family: $secondary-font;
 }
 
 h1, .h1{

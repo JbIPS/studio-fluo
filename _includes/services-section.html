@@ -1,12 +1,10 @@
-{% if site.data.settings.services %}
-<!-- services -->
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.data.settings.services-title }}</h2>
+        <h2 class="section-title">{{ site.data.services.title }}</h2>
       </div>
-      {% for service in site.data.settings.services %}
+      {% for service in site.data.services.services %}
       <div class="col-md-4 mb-4 mb-md-0">
         <div class="card hover-shadow shadow">
           <div class="card-body {% if service.active %}active-bg-primary{% endif %} text-center px-4 py-5">
@@ -20,5 +18,3 @@
     </div>
   </div>
 </section>
-<!-- /services -->
-{% endif %}

@@ -71,7 +71,7 @@ a:hover {
 
   &-title {
     margin-bottom: 80px;
-    font-family: $tertiary-font;
+    font-family: $primary-font;
   }
 }
 
@@ -184,10 +184,6 @@ a:hover {
 
 .font-secondary {
   font-family: $secondary-font !important;
-}
-
-.font-tertiary {
-  font-family: $tertiary-font !important;
 }
 
 .shadow {
