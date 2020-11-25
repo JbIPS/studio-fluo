@@ -93,6 +93,18 @@ collections:
       - {label: "Image", name: "icon", widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Activé", name: "active", widget: "boolean"}
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Auteur", name: "author", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
   - name: "configuration" # Used in routes, e.g., /admin/collections/blog
     label: "Configurations" # Used in the UI
     files:
@@ -102,6 +114,7 @@ collections:
         fields:
           - {label: "Titre", name: "title", widget: "string"}
           - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Favicon", name: "favicon", widget: "image"}
           - {label: "Auteur", name: "author", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "E-mail", name: "email", widget: "string", pattern: ['^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$', 'Adresse e-mail invalide']}
@@ -138,3 +151,17 @@ collections:
           - {label: "Titre process", name: "process", widget: "string"}
           - {label: "Titre services", name: "services", widget: "string"}
           - {label: "Titre compétences", name: "skills", widget: "string"}
+      - label: "Design"
+        name: design
+        file: _data/design.yml
+        fields:
+          - {label: "Couleur primaire", name: "primary-color", widget: "color"}
+          - {label: "Couleur secondaire", name: "secondary-color", widget: "color"}
+          - {label: "Couleur du texte", name: "text-color", widget: "color"}
+          - {label: "Couleur du texte foncé", name: "text-color-dark", widget: "color"}
+          - {label: "Couleur du texte clair", name: "text-color-light", widget: "color"}
+          - {label: "Couleur par défaut", name: "body-color", widget: "color"}
+          - {label: "Couleur des bordures", name: "border-color", widget: "color"}
+          - {label: "Font primaire", name: "primary-font", widget: "string"}
+          - {label: "Font secondaire", name: "secondary-font", widget: "string"}
+          

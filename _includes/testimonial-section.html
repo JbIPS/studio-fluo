@@ -9,7 +9,7 @@
         <!-- slider-item -->
         <div class="text-center testimonial-content">
           <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">{{ testimonial.content | markdownify }}</p>
+          <p class="text-white mb-4">{{ testimonial.content | markdownify | remove: '<p>' | remove: '</p>'}}</p>
           <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{ testimonial.image | relative_url }}"
             alt="{{ testimonial.name }}">
           <h4 class="text-white">{{ testimonial.name }}</h4>

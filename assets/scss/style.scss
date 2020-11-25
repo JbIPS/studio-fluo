@@ -12,7 +12,21 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 
-@import 'variables';
+// Color Variables
+$primary-color: {{ site.data.design.primary-color }};
+$secondary-color: {{ site.data.design.secondary-color }};
+$text-color: {{ site.data.design.text-color }};
+$text-color-dark: {{ site.data.design.text-color-dark }};
+$text-color-light: {{ site.data.design.text-color-light }};
+$body-color:{{ site.data.design.body-color }};
+$border-color: {{ site.data.design.border-color }};
+$black: #000;
+$white: #fff;
+$gray: #eaeaea;
+
+// Font Variables
+$primary-font: {{ site.data.design.primary-font }};
+$secondary-font: {{ site.data.design.secondary-font }};
 
 @import 'mixins';
 

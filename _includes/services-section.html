@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.data.services.title }}</h2>
+        <h2 class="section-title">{{ site.data.settings.services }}</h2>
       </div>
       {% for service in site.services %}
       <div class="col-md-4 mb-4 mb-md-0">
@@ -10,7 +10,7 @@
           <div class="card-body {% if service.active %}active-bg-primary{% endif %} text-center px-4 py-5">
             <i class="{{ service.icon }} icon mb-5 d-inline-block"></i>
             <h4 class="mb-4">{{ service.title }}</h4>
-            <p>{{ service.content | markdownify }}</p>
+              {{ service.content | markdownify }}
           </div>
         </div>
       </div>
