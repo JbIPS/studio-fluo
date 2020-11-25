@@ -8,7 +8,7 @@
     <div class="client-logo-slider d-flex align-items-center">
       {% for slider-item in site.data.clients.clients %}
       <a href="{{ slider-item.url }}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="{{ site.baseurl }}/{{ slider-item.logo }}" alt="client-logo"></a>
+          src="{{ slider-item.logo | relative_url }}" alt="client-logo"></a>
       {% endfor %}
     </div>
   </div>
