@@ -8,6 +8,7 @@ email: flora@studiofluo.fr
 phone: +33 6 83 65 31 74
 address: Villeurbanne
 copyright: Copyright &copy; 2020 Design et développement par Studio Fluo
+baseline: Des <br> couleurs <br> dans vos idées
 menu:
 - name: About
   link: /about
@@ -15,9 +16,6 @@ menu:
   link: /portfolio
 - name: Contact
   link: /contact
-# Hero Section
-hero:
-  hero-title: Des <br> couleurs <br> dans vos idées
 social:
 - icon: ti-facebook
   link: "https://www.facebook.com/studiofluodesign/"

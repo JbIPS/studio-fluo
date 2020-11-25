@@ -93,3 +93,48 @@ collections:
       - {label: "Image", name: "icon", widget: "image"}
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Activé", name: "active", widget: "boolean"}
+  - name: "configuration" # Used in routes, e.g., /admin/collections/blog
+    label: "Configurations" # Used in the UI
+    files:
+      - label: "Général"
+        name: global
+        file: _data/settings.yml
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Auteur", name: "author", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "E-mail", name: "email", widget: "string", pattern: ['^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$', 'Adresse e-mail invalide']}
+          - {label: "Téléphone", name: "phone", widget: "string", pattenr: ['^\+\d{2} \d \d{2} \d{2} \d{2} \d{2}$'; '+XX X XX XX XX XX']}
+          - {label: "Adresse", name: "address", widget: "string"}
+          - {label: "Copyright", name: "copyright", widget: "string"}
+          - label: Menu
+            name: menu
+            widget: list
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Lien", name: "link", widget: "string"}
+          - {label: "Baseline", name: "baseline", widget: "string"}
+          - label: Réseaux Sociaux
+            name: social
+            widget: list
+            fields:
+              - label: "Icône"
+                name: "icon"
+                widget: "select"
+                options: 
+                  - {label: "Facebook", value: "ti-facebook"}
+                  - {label: "Instagram", value: "ti-instagram"}
+                  - {label: "Dribble", value: "ti-dribble"}
+                  - {label: "LinkedIn", value: "ti-linkedin"}
+                  - {label: "Twitter", value: "ti-twitter"}
+              - {label: "Lien", name: "link", widget: "string"}
+          - {label: "Titre témoignage", name: "testimonial", widget: "string"}
+          - {label: "Titre partenaires", name: "team", widget: "string"}
+          - {label: "Titre clients", name: "clients", widget: "string"}
+          - {label: "Titre contact", name: "contact", widget: "string"}
+          - {label: "Titre formation", name: "education", widget: "string"}
+          - {label: "Titre expérience", name: "experiences", widget: "string"}
+          - {label: "Titre process", name: "process", widget: "string"}
+          - {label: "Titre services", name: "services", widget: "string"}
+          - {label: "Titre compétences", name: "skills", widget: "string"}
