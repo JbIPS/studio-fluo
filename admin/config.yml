@@ -5,7 +5,6 @@ backend:
   site_domain: studiofluo.fr #fervent-booth-0686d7.netlify.com
 
 media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
 
 site_url: https://studiofluo.fr
 locale: 'fr'
@@ -16,6 +15,7 @@ collections:
     folder: "_portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
+    preview_path: "portfolio/{{slug}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
