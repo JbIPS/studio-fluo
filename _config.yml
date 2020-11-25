@@ -26,6 +26,14 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:name
+  testimonials:
+  team:
+  clients:
+  experiences:
+  education:
+  services:
+  skills:
+  process:
 
 sass:
   sass_dir: assets/scss

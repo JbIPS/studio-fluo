@@ -23,3 +23,73 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "clients" # Used in routes, e.g., /admin/collections/blog
+    label: "Clients" # Used in the UI
+    folder: "_clients" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "portfolio"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "URL du client", name: "client_url", widget: "string"}
+  - name: "education" # Used in routes, e.g., /admin/collections/blog
+    label: "Education" # Used in the UI
+    folder: "_education" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Année", name: "year", widget: "number"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "team" # Used in routes, e.g., /admin/collections/blog
+    label: "Partenaires" # Used in the UI
+    folder: "_team" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "designation", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+  - name: "experiences" # Used in routes, e.g., /admin/collections/blog
+    label: "Expériences" # Used in the UI
+    folder: "_experiences" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Période", name: "periode", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "process" # Used in routes, e.g., /admin/collections/blog
+    label: "Process" # Used in the UI
+    folder: "_process" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "skills" # Used in routes, e.g., /admin/collections/blog
+    label: "Compétences" # Used in the UI
+    folder: "_skills" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Couleur", name: "color", widget: "color"}
+      - {label: "Valeur", name: "value", widget: "string", pattern: ['%$', 'Doit finir par %']}
+  - name: "services" # Used in routes, e.g., /admin/collections/blog
+    label: "Services" # Used in the UI
+    folder: "_services" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Activé", name: "active", widget: "boolean"}

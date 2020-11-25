@@ -2,17 +2,17 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ site.data.education.title }}</h2>
+        <h2 class="section-title">{{ site.data.settings.education }}</h2>
       </div>
-      {% for education in site.data.education.education %}
+      {% for education in site.education %}
       <div class="col-lg-6 col-md-6 mb-80">
         <div class="d-flex">
           <div class="mr-lg-5 mr-3">
             <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
           </div>
           <div>
-            <p class="text-dark mb-1">{{ education.date }}</p>
-            <h4>{{ education.name }}</h4>
+            <p class="text-dark mb-1">{{ education.year }}</p>
+            <h4>{{ education.title }}</h4>
             <p class="mb-0 text-light">{{ education.organization }}</p>
           </div>
         </div>
