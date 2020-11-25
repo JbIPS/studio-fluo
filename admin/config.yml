@@ -164,4 +164,12 @@ collections:
           - {label: "Couleur des bordures", name: "border-color", widget: "color"}
           - {label: "Font primaire", name: "primary-font", widget: "string"}
           - {label: "Font secondaire", name: "secondary-font", widget: "string"}
+          - label: Illustrations
+            name: illustrations
+            widget: list
+            allow_add: false
+          - label: Formes
+            name: shapes
+            widget: list
+            allow_add: false
           
