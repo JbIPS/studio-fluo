@@ -2,10 +2,8 @@ backend:
   name: github
   repo: JbIPS/studiofluo.fr
   branch: master # Branch to update (optional; defaults to master)
-  api_root: https://api.github.com
   site_domain: fervent-booth-0686d7
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  
 media_folder: "assets/images/uploads"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
