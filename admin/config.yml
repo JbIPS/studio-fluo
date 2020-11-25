@@ -2,7 +2,7 @@ backend:
   name: github
   repo: JbIPS/studiofluo.fr
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: jbips.github.io #fervent-booth-0686d7
+  site_domain: studiofluo.fr #fervent-booth-0686d7.netlify.com
 
 media_folder: "assets/images/uploads"
 collections:
