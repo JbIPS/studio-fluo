@@ -8,7 +8,7 @@ border-color: "#ff9970"
 primary-font: "'Jost', sans-serif"
 secondary-font: "'Domine', serif"
 illustrations:
-  - /assets/images/illustrations/bckgd-rayons.png
+  - /assets/images/illustrations/bckgd-title.png
   - /assets/images/illustrations/rayon-vert.png
   - /assets/images/illustrations/dots-cyan.png
   - /assets/images/illustrations/rayon-cyan.png
@@ -16,7 +16,7 @@ illustrations:
   - /assets/images/illustrations/rayon-magenta.png
   - /assets/images/illustrations/rayon-orange.png
 shapes:
-  - /assets/images/illustrations/bckgd-rayons.png
+  - /assets/images/illustrations/bckgd-page.png
   - /assets/images/illustrations/dots-cyan.png
   - /assets/images/illustrations/rayon-vert.png
   - /assets/images/illustrations/rayon-cyan.png
