@@ -1,24 +1,12 @@
-logo: /assets/images/uploads/asset-3-0.75x.png
-author: Studio Fluo
-phone: +33 6 83 65 31 74
-copyright: Copyright &copy; 2020 Design et développement par Studio Fluo
-baseline: Des <br> couleurs <br> dans vos idées
-social:
-  - icon: ti-facebook
-    link: https://www.facebook.com/studiofluodesign/
-  - icon: ti-instagram
-    link: https://www.instagram.com/studiofluodesign/
-clients: Ils me font confiance
-contact: Contactez-moi
-education: Mes formations
-experiences: Mon historique
-process: Vos visuels en 3 étapes
-skills: Mes compétences
-favicon: /assets/images/favicon.png
 title: Studio Fluo
+logo: /assets/images/uploads/asset-10-0.5x.png
+favicon: /assets/images/favicon.png
+author: Studio Fluo
 description: Studio graphique engagé pour mettre de la couleur dans vos idées
 email: flora@studiofluo.fr
+phone: +33 6 83 65 31 74
 address: Villeurbanne
+copyright: Copyright &copy; 2020 Design et développement par Studio Fluo
 menu:
   - name: Home
     link: /
@@ -28,6 +16,18 @@ menu:
     link: /portfolio
   - name: Contact
     link: /contact
+baseline: Des <br> couleurs <br> dans vos idées
+social:
+  - icon: ti-facebook
+    link: https://www.facebook.com/studiofluodesign/
+  - icon: ti-instagram
+    link: https://www.instagram.com/studiofluodesign/
 testimonial: Témoignages
 team: Partenaires
+clients: Ils me font confiance
+contact: Contactez-moi
+education: Mes formations
+experiences: Mon historique
+process: Vos visuels en 3 étapes
 services: Mes services
+skills: Mes compétences
