@@ -24,6 +24,22 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Domine';
+  src: url("../fonts/JDomine-VariableFont_wght.ttf") format("truetype");
+}
+
 body {
   line-height: 1.2;
   font-family: $primary-font;
