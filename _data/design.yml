@@ -1,8 +1,8 @@
-primary-color: "#ff5714"
-secondary-color: "#1be7ff"
-text-color: "#4c4c4c"
-text-color-dark: "#000"
-text-color-light: "#999"
+primary-color: "#002429"
+secondary-color: "#9afec4"
+text-color: "#14000b"
+text-color-dark: "#001214"
+text-color-light: "#d7ffe7"
 body-color: "#fff"
 border-color: "#c7c7c7"
 primary-font: "'Yanone', sans-serif"
@@ -21,7 +21,7 @@ shapes:
   - /assets/images/illustrations/rayon-vert.png
   - /assets/images/illustrations/rayon-cyan.png
   - /assets/images/illustrations/rayon-magenta.png
-  - /assets/images/illustrations/rayon-vert.png
-  - /assets/images/illustrations/rayon-cyan.png
+  - /assets/images/illustrations/rayon-magenta.png
+  - /assets/images/illustrations/rayon-orange.png
   - /assets/images/illustrations/rayon-jaune.png
   - /assets/images/illustrations/rayon-orange.png
