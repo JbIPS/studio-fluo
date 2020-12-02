@@ -1,13 +1,13 @@
 ---
 layout: about
-title: About me
-author: Johnathan Smith
-image: assets/images/about/author.jpg
+title: Mes convictions
+author: Flora Richardet
+image: assets/images/illustrations/Profile.jpg
 signature: assets/images/about/signature.png
-button: En savoir plus
+button: Qui suis-je ?
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Passionnée des arts graphiques depuis longtemps, j'ai toujours aimé peindre et créer des affiches et logos pour les associations et évènements locaux. Après une carrière en ingénérie, j'ai décidé de me lancer pleinement dans le monde du design pour aider les porteurs de projets à optimiser leur communication visuelle.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+Mes dix années d'expérience de cheffe de projet m'ont appris à bien comprendre les attentes de mes partenaires, à bien gérer les priorités et à procéder par itérations afin d'être toujours alignée avec ce qu'ils avaient en tête.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Ma volonté est de mettre mes compétences graphiques aux services des projets qui résonnent avec mes convictions : écologie, utilité sociale et humanisme. J'aime travailler sur différent supports, qu'il s'agisse du web, du papier ou même du tissus. Vous avez une idée derrière la tête sans savoir comment la concrétiser ? Demandez-moi !
