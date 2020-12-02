@@ -2,7 +2,7 @@
 layout: about
 title: Mes convictions
 author: Flora Richardet
-image: assets/images/illustrations/Profile.jpg
+image: assets/images/uploads/profile.jpg
 signature: assets/images/about/signature.png
 button: Qui suis-je ?
 ---
