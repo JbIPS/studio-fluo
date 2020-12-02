@@ -1,5 +1,5 @@
 ---
-title: Diplôme Adobe Illustrator
+title: TOSA - Adobe Illustrator Perfectionnement
 year: 2020
-organization: 'Masassusets Institute of Technology'
+organization: Devictio Formations
 ---
