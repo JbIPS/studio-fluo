@@ -1,5 +1,10 @@
+{% assign tags = "" | split: "" %}
+{% for tag in include.item.tags %}
+	{% assign slug = tag | slugify %}
+	{% assign tags = tags | push: slug %}
+{% endfor %}
 <div class="col-lg-4 col-6 mb-4 shuffle-item"
-        data-groups='{{ include.item.tags | jsonify}}'>
+        data-groups='{{ tags | jsonify}}'>
 	<a href="{{ include.item.url }}">
 		<div class="position-relative rounded hover-wrapper">
 			<img src="{{ include.item.image | relative_url }}" alt="portfolio-image"
