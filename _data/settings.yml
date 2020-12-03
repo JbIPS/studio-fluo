@@ -8,14 +8,12 @@ phone: +33 6 83 65 31 74
 address: Lyonnaise
 copyright: Copyright &copy; 2020 Design et développement par Studio Fluo
 menu:
-  - name: Home
+  - name: Accueil
     link: /
-  - name: About
+  - name: Qui suis-je ?
     link: /about
   - name: Portfolio
     link: /portfolio
-  - name: Contact
-    link: /contact
 baseline: Des <br> couleurs <br> dans vos idées
 social:
   - icon: ti-facebook
