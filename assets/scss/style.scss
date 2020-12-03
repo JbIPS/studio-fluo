@@ -22,7 +22,8 @@ $body-color:{{ site.data.design.body-color }};
 $border-color: {{ site.data.design.border-color }};
 $black: #000;
 $white: #fff;
-$gray: #eaeaea;
+$gray: {{ site.data.design.text-color-dark }};
+//#eaeaea;
 
 // Font Variables
 $primary-font: {{ site.data.design.primary-font }};
