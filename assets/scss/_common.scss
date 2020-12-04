@@ -82,7 +82,8 @@ a:hover {
 }
 
 .bg-image {
-  background-image: url(/assets/images/illustrations/meduse-dust-flare.png) $primary-color;
+  background-image: url(/assets/images/illustrations/meduse-dust-flare.png);
+  background-color: $primary-color;
 }
 
 /* overlay */
