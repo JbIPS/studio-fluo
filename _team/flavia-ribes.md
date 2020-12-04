@@ -1,5 +1,5 @@
 ---
-title: "Flavia Ribes"
-image: "assets/images/team/member-1.png"
-designation: "Facilitatrice"
+title: Flavia Ribes
+designation: Facilitatrice du quotidien
+image: /assets/images/uploads/image.jpg
 ---
