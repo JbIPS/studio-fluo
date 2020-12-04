@@ -1,5 +1,5 @@
 ---
 title: Couleurs de forge
-logo: https://www.couleursdeforge.com/style/logo-couleurs-de-forge.png
+logo: /assets/images/uploads/asset-1-0.5x.png
 client_url: https://www.couleursdeforge.com/
 ---
