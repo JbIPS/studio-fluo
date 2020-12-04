@@ -1,6 +1,7 @@
 .hero-area {
   padding: 300px 0 200px;
   position: relative;
+  background: center / contain no-repeat url(/assets/images/illustrations/meduse-dust-flare.png) $primary-color
   @include tablet {
     padding: 250px 0 150px;
     overflow: hidden;
