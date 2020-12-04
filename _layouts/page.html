@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- page title -->
-<section class="page-title bg-cover bg-image position-relative">
+<section class="page-title bg-cover bg-image position-relative {{page.class}}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -13,7 +13,7 @@ layout: default
   </div>
   <!-- background shapes -->
   {% for img in site.data.design.illustrations %}
-    <img src="{{ img | relative_url }}" alt="illustrations" class="bg-shape-{{ forloop.index }}{% if forloop.first == true %} w-100{% endif %}">
+    <img src="{{ img | relative_url }}" alt="illustrations" class="bg-shape-{{ forloop.index | plus: 1}}">
   {% endfor %}
 </section>
 <!-- /page title -->

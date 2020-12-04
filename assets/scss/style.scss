@@ -48,3 +48,5 @@ $secondary-font: {{ site.data.design.secondary-font }};
 @import 'templates/about';
 
 @import 'templates/portfolio';
+
+@import 'templates/fuzzy-button';

@@ -86,6 +86,14 @@ a:hover {
   background-color: $primary-color;
 }
 
+.bg-image.testimonial-bg-shapes {
+  background-image: url(/assets/images/backgrounds/dust.png);
+}
+
+.bg-image.about, .bg-image.portfolio {
+  background-image: url(/assets/images/illustrations/champi-page.png);
+}
+
 /* overlay */
 
 .overlay {

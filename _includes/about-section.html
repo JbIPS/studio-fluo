@@ -4,9 +4,10 @@
     {% assign about = site.pages | where: "url", "/about.html" | first %}
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        {% assign excerpt = about.content | newline_to_br  | strip_newlines | split: "<br />" | first %}
-        <p class="font-secondary paragraph-lg text-dark">{{ excerpt | remove: "<p>" | remove: "</p>"}}</p>
-        <a href="{{ about.url }}" class="btn btn-transparent">{{ about.button }}</a>
+        {% assign excerpt = about.content | newline_to_br  | strip_newlines | split: "<br />" %}
+        <p class="font-secondary paragraph-lg text-dark">{{ excerpt[2] | remove: "<p>" | remove: "</p>"}}</p>
+        <!--<a href="{{ about.url }}" class="btn btn-transparent">{{ about.button }}</a>-->
+        {% include fuzzy-button.html url=about.url text=about.button %}
       </div>
     </div>
   </div>

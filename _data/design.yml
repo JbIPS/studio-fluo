@@ -8,15 +8,12 @@ border-color: "#ff9970"
 primary-font: "'Jost', sans-serif"
 secondary-font: "'Domine', serif"
 illustrations:
-  - /assets/images/illustrations/champi-page.png
   - /assets/images/illustrations/rayon-vert.png
-  - /assets/images/illustrations/dots-cyan.png
   - /assets/images/illustrations/rayon-cyan.png
   - /assets/images/illustrations/rayon-jaune.png
   - /assets/images/illustrations/rayon-magenta.png
   - /assets/images/illustrations/rayon-orange.png
 shapes:
-  - /assets/images/illustrations/meduse-dust-flare.png
   - /assets/images/illustrations/meduse-blue.png
   - /assets/images/illustrations/meduse-green.png
   - /assets/images/illustrations/meduse-pink.png
