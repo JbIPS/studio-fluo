@@ -37,6 +37,8 @@
     /* ########################################### hero parallax ############################################## */
     window.onload = function () {
         var parallaxBox = document.getElementById('parallax');
+        if(!parallaxBox) return;
+
         const elements = [];
         let i = 2;
         let elemExist = true;
@@ -129,15 +131,27 @@
     var Shuffle = window.Shuffle;
     var jQuery = window.jQuery;
 
+    const category = decodeURI(window.location.hash.substr(1));
+    if(category) {
+        $(`input[name="shuffle-filter"][value="${category}"]`)
+        .prop('checked', true)
+        .parent().addClass("active");
+    } else {
+        $(`input[name="shuffle-filter"][value="all"]`)
+        .prop('checked', true)
+        .parent().addClass("active");
+    }
     var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
         itemSelector: '.shuffle-item',
-        buffer: 1
+        buffer: 1,
+        group: category || Shuffle.ALL_ITEMS
     });
 
     jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
         var input = evt.currentTarget;
         if (input.checked) {
             myShuffle.filter(input.value);
+            window.location.hash = input.value
         }
     });
 

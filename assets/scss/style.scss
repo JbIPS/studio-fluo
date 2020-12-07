@@ -39,11 +39,11 @@ $secondary-font: {{ site.data.design.secondary-font }};
 
 @import 'templates/navigation';
 
+@import 'templates/client';
+
 @import 'templates/hero-area';
 
 @import 'templates/homepage';
-
-@import 'templates/blog';
 
 @import 'templates/about';
 

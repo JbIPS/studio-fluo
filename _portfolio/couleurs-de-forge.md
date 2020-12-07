@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: Couleurs de forge
 description: Forge d'art et ferronerie
 image: /assets/images/uploads/cdf-cap-mockup.jpg

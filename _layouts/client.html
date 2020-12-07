@@ -1,0 +1,21 @@
+---
+layout: page
+---
+<section class="section client">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="mb-4">{{ page.title | escape }}</h2>
+        <div class="mb-3">
+        {% for tag in page.tags %}
+          <a class="btn btn-sm btn-primary" href="/portfolio#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+        </div>
+        <div class="content">
+          <img src="{{page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{page.title}}">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: Robin Gueguen
 description: Le plein d'énergie avec l'impro
 image: /assets/images/uploads/rg-piste1-déclinaison2.jpg
