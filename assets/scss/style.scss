@@ -37,6 +37,8 @@ $secondary-font: {{ site.data.design.secondary-font }};
 
 @import 'common';
 
+@import 'icons';
+
 @import 'templates/navigation';
 
 @import 'templates/client';

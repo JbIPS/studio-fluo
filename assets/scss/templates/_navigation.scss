@@ -3,7 +3,7 @@
   transition: .3s ease;
   &.nav-bg {
     background-color: $primary-color;
-    padding: 15px 100px;
+    padding: 0 100px;
     @include desktop {
       padding: 15px 20px;
     }

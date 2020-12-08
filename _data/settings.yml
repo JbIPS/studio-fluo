@@ -5,7 +5,7 @@ author: Studio Fluo
 description: Studio graphique engagé pour mettre de la couleur dans vos idées
 email: flora@studiofluo.fr
 phone: +33 6 83 65 31 74
-address: Lyonnaise
+address: Rhône-Alpes, entre Lyon & Pierrelatte
 copyright: Copyright &copy; 2020 Design et développement par Studio Fluo
 menu:
   - name: Accueil
@@ -16,11 +16,11 @@ menu:
     link: /portfolio
 baseline: Des <br> couleurs <br> dans vos idées
 social:
-  - icon: ti-facebook
+  - icon: ico-facebook
     link: https://www.facebook.com/studiofluodesign/
-  - icon: ti-instagram
+  - icon: ico-instagram
     link: https://www.instagram.com/studiofluodesign/
-  - icon: ti-linkedin
+  - icon: ico-linkedin
     link: https://www.linkedin.com/company/studiofluodesign
 testimonial: Témoignages
 portfolio: Mes réalisations

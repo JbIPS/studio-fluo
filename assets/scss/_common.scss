@@ -8,21 +8,6 @@ body {
   color: $white;
 }
 
-/* preloader */
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $white;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 ol,
 ul {
   list-style-type: none;
@@ -63,10 +48,6 @@ a:hover {
 
 .clickable {
   cursor: pointer;
-}
-
-.slick-slide {
-  outline: 0;
 }
 
 .section {
@@ -230,33 +211,6 @@ a:hover {
 
 /* /icon */
 
-/* slick slider */
-.slick-dots{
-  text-align: center;
-  padding-left: 0;
-  li{
-    display: inline-block;
-    margin: 2px;
-    &.slick-active{
-      button{
-        background: $white;
-        width: 25px;
-      }
-    }
-    button{
-      height: 6px;
-      width: 12px;
-      background: rgba($color: $white, $alpha: .5);
-      color: transparent;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: .2s ease;
-      border: 0;
-    }
-  }
-}
-/* /slick slider */
-
 /* form */
 .form-control{
   border: 0;
@@ -284,5 +238,17 @@ textarea.form-control{
   &-footer{
     border: 0;
   }
+
+  &:hover .card-body {
+    transform: scale(0.99);
+  }
+
+  & h4 {
+    font-family: $primary-font, sans-serif;
+  }
 }
 /* /card */
+
+.portrait {
+  max-height: 100px;
+}

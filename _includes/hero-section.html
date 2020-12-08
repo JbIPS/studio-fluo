@@ -16,7 +16,7 @@
   <!-- social icon -->
   <ul class="list-unstyled ms-5 mt-3 position-relative zindex-1">
     {% for social in site.data.settings.social %}
-    <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="ico {{ social.icon }}"></i></a></li>
     {% endfor %}
   </ul>
   <!-- /social icon -->
