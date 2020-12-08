@@ -1,38 +1,19 @@
-(function ($) {
+(function () {
     'use strict';
 
 
 
     // Sticky Menu
-    $(window).scroll(function () {
-        if ($('.navigation').offset().top > 100) {
-            $('.navigation').addClass('nav-bg');
+    window.onscroll = function () {
+        const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 100,
+            header = document.querySelector(".navigation");
+        if (distanceY > shrinkOn) {
+            header.classList.add("nav-bg");
         } else {
-            $('.navigation').removeClass('nav-bg');
+            header.classList.remove("nav-bg");
         }
-    });
-
-    // Background-images
-    $('[data-background]').each(function () {
-        $(this).css({
-            'background-image': 'url(' + $(this).data('background') + ')'
-        });
-    });
-
-    // background color
-    $('[data-color]').each(function () {
-        $(this).css({
-            'background-color': $(this).data('color')
-        });
-    });
-
-    // progress bar
-    $('[data-progress]').each(function () {
-        $(this).css({
-            'bottom': $(this).data('progress')
-        });
-    });
-
+    };
 
     /* ########################################### hero parallax ############################################## */
     window.onload = function () {
@@ -77,84 +58,40 @@
     }
     /* ########################################### /hero parallax ############################################## */
 
-    // testimonial-slider
-    $('.testimonial-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        arrows: false,
-        adaptiveHeight: true
-    });
-
-
-    // clients logo slider
-    $('.client-logo-slider').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        dots: false,
-        arrows: false,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
     // Shuffle js filter and masonry
-    var Shuffle = window.Shuffle;
-    var jQuery = window.jQuery;
+    const shuffleWrapper = document.querySelector('.shuffle-wrapper');
+    if(shuffleWrapper) {
+        var Shuffle = window.Shuffle;
+        var jQuery = window.jQuery;
 
-    const category = decodeURI(window.location.hash.substr(1));
-    if(category) {
-        $(`input[name="shuffle-filter"][value="${category}"]`)
-        .prop('checked', true)
-        .parent().addClass("active");
-    } else {
-        $(`input[name="shuffle-filter"][value="all"]`)
-        .prop('checked', true)
-        .parent().addClass("active");
-    }
-    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-        itemSelector: '.shuffle-item',
-        buffer: 1,
-        group: category || Shuffle.ALL_ITEMS
-    });
-
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-        var input = evt.currentTarget;
-        if (input.checked) {
-            myShuffle.filter(input.value);
-            window.location.hash = input.value
+        const selectFilter = function(category) {
+            const cat = category === "" ? "all" : category;
+            const el = document.querySelector(`input[name="shuffle-filter"][value="${cat}"]`)
+            if(el) {
+                el.checked = true;
+                el.parentElement.classList.add("active");
+            }
         }
-    });
 
+        const category = decodeURI(window.location.hash.substr(1));
+        selectFilter(category);
 
+        var myShuffle = new Shuffle(shuffleWrapper, {
+            itemSelector: '.shuffle-item',
+            buffer: 1,
+            group: category || Shuffle.ALL_ITEMS
+        });
 
-})(jQuery);
+        const filters = document.querySelectorAll('input[name="shuffle-filter"]');
+        filters.forEach(input => {
+            input.oninput = (e) => {
+                const input = e.currentTarget;
+                if (input.checked) {
+                    myShuffle.filter(input.value);
+                    window.location.hash = input.value
+                }
+               }
+        })
+    }
+
+})();

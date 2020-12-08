@@ -6,20 +6,20 @@ title: Mes réalisations
 <!-- portfolio -->
 <section class="section">
   <div class="container">
-    <div class="row mb-5">
+    <div class="row mb-4">
       <div class="col-12">
-        <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
-          <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="all"/>Tout
-          </label>
-          {% assign tags = '' | split: '' %}
+        <!-- <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons" role="group" aria-label="Filtres"> -->
+        <div class="btn-group-sm btn-group-toggle" data-toggle="buttons" role="group" aria-label="Filtres">
+          {% assign tags = 'all' | split: ' ' %}
           {% for item in site.portfolio %}
             {% assign tags = tags | concat: item.tags %}
           {% endfor %}
           {% assign tags = tags | uniq %}
           {% for tag in tags %}
-          <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="{{ tag | slugify }}" />{{ tag }}
+          {% assign slug = tag | slugify %}
+          <input type="radio" name="shuffle-filter" id="filter-{{ slug }}" value="{{ slug }}" class="btn-check" autocomplete="off"/>
+          <label class="btn btn-primary" for="filter-{{ slug }}">
+            {% if tag == "all" %}Tout{% else %}{{ tag }}{% endif %}
           </label>
           {% endfor %}
         </div>

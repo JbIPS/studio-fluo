@@ -61,6 +61,10 @@ a:hover {
   color: $primary-color;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .slick-slide {
   outline: 0;
 }

@@ -13,7 +13,7 @@
     </button>
 
     <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         {% for link in site.data.settings.menu %}
         {% assign pageId = page.url | remove: '.html' %}
         <li class="nav-item {% if link.link == pageId %}active{% endif %}">

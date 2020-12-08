@@ -11,9 +11,42 @@ layout: page
           <a class="btn btn-sm btn-primary" href="/portfolio#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
         </div>
-        <div class="content">
-          <img src="{{page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{page.title}}">
+        <div class="d-flex align-items-start">
+          <img src="{{page.image | relative_url }}" class="align-self-start me-3 w-25" alt="{{page.title}}">
           {{ content }}
+        </div>
+        <div class="row mt-3" data-bs-toggle="modal" data-bs-target="#lightbox">
+          {% for image in page.gallery %}
+            <div class="col-6 col-md-4 col-lg-3 clickable">
+              <img src="{{ image.src }}" class="img-fluid rounded mb-3"  alt="{{ image.title }}" data-target="#carousel" data-slide-to="{{ forloop.index0 }}">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="modal fade" id="lightbox" role="dialog" aria-labelledby="lightbox" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <!-- Carousel -->
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    {% for image in page.gallery %}
+                    <div class="carousel-item {% if forloop.first == true %}active{% endif %}">
+                      <img class="d-block w-100" src="{{ image.src }}" alt="{{ image.title }}">
+                    </div>
+                    {% endfor %}
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

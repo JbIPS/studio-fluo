@@ -43,8 +43,7 @@
     background: lighten($color: $primary-color, $amount: 10);
   }
 
-  &.focus,
-  &.active {
+  .btn-check:checked + & {
     background: lighten($color: $primary-color, $amount: 10) !important;
     box-shadow: none !important;
   }
