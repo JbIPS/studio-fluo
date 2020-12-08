@@ -23,6 +23,12 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+      - label: Galerie
+        name: gallery
+        widget: list
+        fields:
+          - {label: "URL", name: "src", widget: "string"}
+          - {label: "Texte alternatif", name: "title", widget: "string"}
   - name: "clients" # Used in routes, e.g., /admin/collections/blog
     label: "Clients" # Used in the UI
     folder: "_clients" # The path to the folder where the documents are stored
