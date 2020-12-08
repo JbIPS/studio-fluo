@@ -1,43 +1,21 @@
 /*  typography */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700');
-
-@font-face {
-  font-family: 'BwNistaInt-xBd';
-  src: url("../fonts/BwNistaInt-xBd.woff") format("woff");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Yanone';
-  src: url("../fonts/YanoneKaffeesatz-VariableFont_wght.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Young';
-  src: url("../fonts/Young.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Young';
-  src: url("../fonts/Young_italic.ttf") format("truetype");
-  font-style: italic;
-}
-
 @font-face {
   font-family: 'Jost';
   src: url("../fonts/Jost-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Jost';
   src: url("../fonts/Jost-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Domine';
   src: url("../fonts/Domine-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
