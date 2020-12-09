@@ -16,8 +16,8 @@
             <p class="text-white mb-4">{{ testimonial.content | markdownify | remove: '<p>' | remove: '</p>'}}</p>
             <img class="img-fluid rounded-circle mb-4 portrait" src="{{ testimonial.image | relative_url }}"
               alt="{{ testimonial.name }}">
-            <h4 class="text-white">{{ testimonial.name }}</h4>
-            <h5 class="text-light mb-4">{{ testimonial.designation }} de {{ testimonial.company }}</h5>
+            <h3 class="text-white">{{ testimonial.name }}</h4>
+            <h4 class="text-light mb-4">{{ testimonial.designation }}{% if testimonial.company %} de {{ testimonial.company }}{% endif %}</h5>
           </div>
         {% endfor %}
         </div>
