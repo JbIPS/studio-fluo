@@ -4,7 +4,7 @@
       <div class="col-12 text-center">
         <h2 class="section-title text-white mb-5">{{ site.data.settings.testimonial }}</h2>
       </div>
-      <div id="testimonials" class="carousel slide" data-bs-ride="true" data-bs-interval="10000">
+      <div id="testimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
         <ol class="carousel-indicators">
           {% for testimonial in site.testimonials %}
           <li data-bs-target="#testimonials" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first == true %}class="active"{% endif %}></li>
@@ -21,21 +21,7 @@
           </div>
         {% endfor %}
         </div>
-        <a class="carousel-control-prev" href="#testimonials" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Précédent</span>
-        </a>
-        <a class="carousel-control-next" href="#testimonials" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Suivant</span>
-        </a>
       </div>
     </div>
   </div>
-  <!-- bg shapes -->
-  <img src="{{ site.baseurl }}/assets/images/illustrations/rayon-vert.png" alt="bg-shape" class="img-fluid bg-shape-1">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/rayon-cyan.png" alt="bg-shape" class="img-fluid bg-shape-2">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/rayon-jaune.png" alt="bg-shape" class="img-fluid bg-shape-3">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/rayon-magenta.png" alt="bg-shape" class="img-fluid bg-shape-4">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/rayon-orange.png" alt="bg-shape" class="img-fluid bg-shape-5">
 </section>
