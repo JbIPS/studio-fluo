@@ -9,16 +9,14 @@
   </div>
   {% for shape in site.data.design.shapes %}
     {% assign idx = forloop.index | plus: 1 | prepend: 'l' %}
-    <div class="layer" id="{{ idx }}">
+     <div class="layer" id="{{ idx }}"> 
       <img src="{{ shape | relative_url }}" alt="bg-shape">
-    </div>
+     </div> 
   {% endfor %}
-  <!-- social icon -->
   <ul class="list-unstyled ms-5 mt-3 position-relative zindex-1">
     {% for social in site.data.settings.social %}
     <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="ico {{ social.icon }}"></i></a></li>
     {% endfor %}
   </ul>
-  <!-- /social icon -->
 </section>
 <!-- /hero area -->

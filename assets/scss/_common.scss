@@ -50,14 +50,9 @@ a:hover {
   cursor: pointer;
 }
 
-.section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  &-title {
-    margin-bottom: 80px;
-    font-family: $primary-font;
-  }
+.section-title {
+  margin-bottom: 80px;
+  font-family: $primary-font;
 }
 
 .bg-cover {
@@ -67,16 +62,16 @@ a:hover {
 }
 
 .bg-image {
-  background-image: url(/assets/images/illustrations/meduse-dust-flare.png);
+  background-image: url(/assets/images/illustrations/meduse-dust-flare.svg);
   background-color: $primary-color;
 }
 
-.bg-image.testimonial-bg-shapes {
-  background-image: url(/assets/images/backgrounds/dust.png);
-}
-
-.bg-image.about, .bg-image.portfolio {
-  background-image: url(/assets/images/illustrations/champi-page.png);
+.bg-image {
+  &.education, &.contact {
+    background-image: url(/assets/images/backgrounds/education-bg.png);
+    background-color: inherit;
+    background-size: cover;
+  }
 }
 
 /* overlay */
