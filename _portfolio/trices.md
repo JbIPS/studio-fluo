@@ -2,7 +2,7 @@
 layout: client
 title: Trices
 description: La facilitatrice du quotidien
-image: /assets/images/uploads/trices_1.webp
+image: /assets/images/uploads/trices_1-small.webp
 tags: 
 - design
 - illustration
