@@ -18,10 +18,13 @@ baseline: Des <br> couleurs <br> dans vos idées
 social:
   - icon: ico-facebook
     link: https://www.facebook.com/studiofluodesign/
+    handle: studiofluodesign
   - icon: ico-instagram
     link: https://www.instagram.com/studiofluodesign/
+    handle: studiofluodesign
   - icon: ico-linkedin
     link: https://www.linkedin.com/company/studiofluodesign
+    handle: studiofluodesign
 testimonial: Témoignages
 portfolio: Mes réalisations
 team: Partenaires

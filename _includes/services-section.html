@@ -9,7 +9,7 @@
         <div class="card{% if service.active %} active-bg-primary{% endif %}">
           <div class="card-body text-center px-4 py-5">
             <i class="{{ service.icon }} icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">{{ service.title }}</h4>
+            <h3 class="mb-4">{{ service.title }}</h4>
               {{ service.content | markdownify }}
           </div>
         </div>

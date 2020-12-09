@@ -238,8 +238,13 @@ textarea.form-control{
     transform: scale(0.99);
   }
 
-  & h4 {
+  & h3 {
     font-family: $primary-font, sans-serif;
+    color: $primary-color;
+  }
+
+  &.active-bg-primary h3 {
+    color: $white;
   }
 }
 /* /card */

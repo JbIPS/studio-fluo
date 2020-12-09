@@ -66,3 +66,14 @@
   bottom: 0;
   left: 0;
 }
+
+.social {
+  i + span {
+    opacity: 0;
+    transition: .5 ease-out;
+  }
+
+  i:hover + span {
+    opacity: 1;
+  }
+}
