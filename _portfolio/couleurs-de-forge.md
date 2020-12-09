@@ -2,7 +2,7 @@
 layout: client
 title: Couleurs de forge
 description: Forge d'art et ferronerie
-image: /assets/images/uploads/cdf-cap-mockup.webp
+image: /assets/images/uploads/cdf-cap-mockup-small.webp
 tags:
 - design
 - merchandising
