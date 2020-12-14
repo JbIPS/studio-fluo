@@ -3,8 +3,8 @@
 
 
 
-    // Sticky Menu
-    window.onscroll = function () {
+    // Sticky Menu    
+    const foldHeader = function () {
         const distanceY = window.pageYOffset || document.documentElement.scrollTop,
             shrinkOn = 100,
             header = document.querySelector(".navigation");
@@ -15,8 +15,11 @@
         }
     };
 
+    window.addEventListener("scroll", foldHeader);
+    window.addEventListener("load", foldHeader);
+
     /* ########################################### hero parallax ############################################## */
-    window.onload = function () {
+    const initParallax = function () {
         var parallaxBox = document.getElementById('parallax');
         if(!parallaxBox) return;
 
@@ -56,6 +59,9 @@
         obj.style.left = left - (((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) * speed) + 'px';
         obj.style.top = top - (((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) * speed) + 'px';
     }
+
+    window.addEventListener("load", initParallax);
+    window.addEventListener("resize", initParallax);
     /* ########################################### /hero parallax ############################################## */
 
     // Shuffle js filter and masonry

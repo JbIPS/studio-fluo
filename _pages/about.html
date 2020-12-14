@@ -3,22 +3,8 @@ layout: page
 author: Flora Richardet
 button: Qui suis-je ?
 ---
-<!-- about -->
 <section class="section pt-5 about">
   <div class="container">
-    {% for p in site.about %}
-      <div class="row mb-5">
-        {% assign is_odd = forloop.index | modulo: 2 %}
-          <div class="col {% unless is_odd == 1 %}order-md-last{% endunless %}">
-            <img src="{{ p.image }}" alt="illustration" class="rounded-circle w-100">
-          </div>
-        <div class="col-md-10 d-flex justify-content-center flex-column">
-          {{ p.content | markdownify }}
-        </div>
-      </div>
-    {% endfor %}
+    {% include staggered-rows.html collection=site.about %}
   </div>
 </section>
-<!-- /about -->
-
-{% include education-section.html %}

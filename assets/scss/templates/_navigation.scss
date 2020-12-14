@@ -23,6 +23,21 @@
     &.active{
       font-weight: bold;
     }
+    &.active.about a.nav-link{
+      color: #DC0073;
+    }
+    &.active.portfolio a.nav-link{
+      color: #FFB800;
+    }
+    &.active.contact a.nav-link{
+      color: #FF5714;
+    }
+    &.active.services a.nav-link{
+      color: #1BE7FF;
+    }
+    &.active a.nav-link{
+      color: #04E762;
+    }
   }
 }
 

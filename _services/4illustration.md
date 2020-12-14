@@ -1,6 +1,6 @@
 ---
 title: Illustration	
-icon: /assets/images/illustrations/icon-illustration.svg
+image: /assets/images/illustrations/icon-illustration.svg
 ---
-Design textile
+Design textile  
 Aquarelles personalisées

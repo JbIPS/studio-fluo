@@ -7,7 +7,7 @@
         <h3 class="text-white">{{site.data.settings.title}}</h3>
       {% endif %}
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,8 +16,8 @@
       <ul class="navbar-nav ms-auto">
         {% for link in site.data.settings.menu %}
         {% assign pageId = page.url | remove: '.html' %}
-        <li class="nav-item {% if link.link == pageId %}active{% endif %}">
-            <a class="nav-link" href="{{ link.link }}">{{ link.name }}</a>
+        <li class="nav-item {{ pageId | remove: '/' }}{% if link.link == pageId %} active{% endif %}">
+            <a class="nav-link" href="{{ link.link }}"{% if link.link == pageId %} aria-current="page"{% endif %}>{{ link.name }}</a>
           </li>
         {% endfor %}
       </ul>
