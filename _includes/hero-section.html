@@ -9,8 +9,8 @@
   </div>
   {% for shape in site.data.design.shapes %}
     {% assign idx = forloop.index | plus: 1 | prepend: 'l' %}
-     <div class="layer" id="{{ idx }}"> 
-      <img src="{{ shape | relative_url }}" alt="bg-shape">
+     <div class="layer{% unless shape.onmobile == true %} d-none d-lg-block{% endunless %}" id="{{ idx }}"> 
+      <img src="{{ shape.src | relative_url }}" alt="bg-shape">
      </div> 
   {% endfor %}
   <ul class="list-unstyled ms-5 mt-3 position-relative zindex-1">

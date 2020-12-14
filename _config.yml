@@ -34,6 +34,7 @@ collections:
   services:
   skills:
   process:
+  about:
 
 sass:
   sass_dir: assets/scss

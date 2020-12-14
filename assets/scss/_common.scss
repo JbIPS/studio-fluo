@@ -227,23 +227,20 @@ textarea.form-control{
 /* card */
 .card{
   border: 0;
-  &-header{
-    border: 0;
-  }
-  &-footer{
-    border: 0;
-  }
 
   &:hover .card-body {
     transform: scale(0.99);
   }
 
-  & h3 {
+  h3 {
     font-family: $primary-font, sans-serif;
     color: $primary-color;
   }
+}
+a:nth-child(2n) .card {
+  background: $primary-color;
 
-  &.active-bg-primary h3 {
+  * {
     color: $white;
   }
 }

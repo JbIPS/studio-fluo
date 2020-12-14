@@ -1,8 +1,6 @@
 ---
-title: Textile	
-icon: ti-gift
-active: # Add true to select section
+title: Couture	
+icon: /assets/images/illustrations/icon-textile.svg
 ---
 Accessoires et doudoux pour bébé  
-Accessoires de coiffures  
-Broderies
+Accessoires de coiffures et Broderies

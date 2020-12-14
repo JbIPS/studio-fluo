@@ -13,7 +13,7 @@ layout: default
   </div>
   <!-- background shapes -->
   {% for img in site.data.design.illustrations %}
-    <img src="{{ img | relative_url }}" alt="illustrations" class="bg-shape-{{ forloop.index | plus: 1}}">
+    <img src="{{ img.src | relative_url }}" alt="illustrations" class="bg-shape-{{ forloop.index | plus: 1}}{% unless img.onmobile == true %} d-none d-lg-block{% endunless %}">
   {% endfor %}
 </section>
 <!-- /page title -->

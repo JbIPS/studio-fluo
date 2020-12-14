@@ -1,8 +1,7 @@
 ---
 title: Web Design
-icon: ti-palette
-active: true # Add true to select section
+icon: /assets/images/illustrations/icon-webdesign.svg
 category: design
 ---
 Logo, Chartre graphique, Refonte d'identité
-Site vitrine, Réseaux sociaux, charte de document
+Site vitrine, Réseaux sociaux et mise en page

@@ -8,17 +8,30 @@ border-color: "#DC0073"
 primary-font: "'Jost', sans-serif"
 secondary-font: "'Domine', serif"
 illustrations:
-  - /assets/images/illustrations/rayon-vert.svg
-  - /assets/images/illustrations/rayon-cyan.svg
-  - /assets/images/illustrations/rayon-jaune.svg
-  - /assets/images/illustrations/rayon-magenta.svg
-  - /assets/images/illustrations/rayon-orange.svg
+  - src: /assets/images/illustrations/rayon-vert.svg
+    onmobile: true
+  - src: /assets/images/illustrations/rayon-cyan.svg
+    onmobile: false
+  - src: /assets/images/illustrations/rayon-jaune.svg
+    onmobile: true
+  - src: /assets/images/illustrations/rayon-magenta.svg
+    onmobile: true
+  - src: /assets/images/illustrations/rayon-orange.svg
+    onmobile: false
 shapes:
-  - /assets/images/illustrations/meduse-blue.svg
-  - /assets/images/illustrations/meduse-green.svg
-  - /assets/images/illustrations/meduse-pink.svg
-  - /assets/images/illustrations/rayon-cyan.svg
-  - /assets/images/illustrations/rayon-magenta.svg
-  - /assets/images/illustrations/rayon-orange.svg
-  - /assets/images/illustrations/rayon-jaune.svg
-  - /assets/images/illustrations/rayon-vert.svg
+  - src: /assets/images/illustrations/meduse-blue.svg
+    onmobile: true
+  - src: /assets/images/illustrations/meduse-green.svg
+    onmobile: false
+  - src: /assets/images/illustrations/meduse-pink.svg
+    onmobile: false
+  - src: /assets/images/illustrations/rayon-cyan.svg
+    onmobile: false
+  - src: /assets/images/illustrations/rayon-magenta.svg
+    onmobile: true
+  - src: /assets/images/illustrations/rayon-orange.svg
+    onmobile: false
+  - src: /assets/images/illustrations/rayon-jaune.svg
+    onmobile: true
+  - src: /assets/images/illustrations/rayon-vert.svg
+    onmobile: true

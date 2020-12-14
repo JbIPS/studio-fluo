@@ -5,10 +5,12 @@
         <h2 class="section-title">{{ site.data.settings.portfolio }}</h2>
       </div>
     </div>
-    <div class="row shuffle-wrapper">
-      {% for item in site.portfolio %}
+    <div class="row">
+      {% for item in site.portfolio limit:3 %}
         {% include portfolio-component.html item=item %}
       {% endfor %}
     </div>
   </div>
+  {% assign portfolio = site.pages | where: "url", "/portfolio.html" | first %}
+  {% include fuzzy-button.html url=portfolio.url text=portfolio.button %}
 </section>

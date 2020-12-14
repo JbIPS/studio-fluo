@@ -12,14 +12,6 @@
   }
 }
 
-.active-bg-primary {
-  transition: .3s ease;
-  background: $primary-color;
-
-  * {
-    color: $white;
-  }
-}
 
 .hover-shadow{
   transition: .2s ease;
@@ -75,60 +67,6 @@
 }
 
 /* /portfolio */
-
-/* testimonial */
-.testimonial-content {
-  strong {
-    color: $secondary-color;
-    font-weight: normal;
-  }
-}
-
-.testimonial-bg-shapes {
-  .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  .bg-map {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .bg-shape-1 {
-    position: absolute;
-    left: 100px;
-    top: -50px;
-  }
-
-  .bg-shape-2 {
-    position: absolute;
-    right: 180px;
-    top: 20px;
-  }
-
-  .bg-shape-3 {
-    position: absolute;
-    right: 10px;
-    top: 180px;
-  }
-
-  .bg-shape-4 {
-    position: absolute;
-    left: 100px;
-    bottom: 200px;
-  }
-
-  .bg-shape-5 {
-    position: absolute;
-    right: 300px;
-    bottom: -50px;
-  }
-}
-
-/* /testimonial */
 
 /* footer */
 .footer-section {

@@ -1,7 +1,6 @@
 ---
 title: Print
-icon: ti-printer
-active: # Add true to select section
+icon: /assets/images/illustrations/icon-print.svg
 ---
-Affiche, Cartes de Visite et Flyers  
-Faire-part, Carte de Voeux et divers papeterie
+Affiches, Cartes de Visite, Flyers  
+Faire-part et divers papeterie
