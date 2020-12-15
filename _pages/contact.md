@@ -2,6 +2,7 @@
 layout: page
 title: Contacts
 ---
+{: .lead .text-center}
 Quelque chose vous a taper dans l'oeil ? Vous avez une demande spéciale ? Laissez moi un message et je pourrais vous guider au mieux.
 
 ## Comment me contacter ?

@@ -273,3 +273,33 @@ textarea.form-control{
     padding: 3px 5px;
   }
 }
+
+.show-on-scroll {
+  @mixin fadeIn {
+    opacity: 1;
+  }
+
+  transition: all .5s;
+
+  &.fade-left {
+    opacity: 0;
+    position: relative;
+    left: -30px;
+
+    &.is-visible {
+      @include fadeIn();
+      left: 0;
+    }
+  }
+  
+  &.fade-right {
+    opacity: 0;
+    position: relative;
+    right: -30px;
+
+    &.is-visible {
+      @include fadeIn();
+      right: 0;
+    }
+  }
+}

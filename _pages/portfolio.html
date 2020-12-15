@@ -5,32 +5,28 @@ title: Mes réalisations
 button: Voir plus
 ---
 <!-- portfolio -->
-<section class="mt-5">
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-12">
-        <!-- <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons" role="group" aria-label="Filtres"> -->
-        <div class="btn-group-sm btn-group-toggle" data-toggle="buttons" role="group" aria-label="Filtres">
-          {% assign tags = 'all' | split: ' ' %}
-          {% for item in site.portfolio %}
-            {% assign tags = tags | concat: item.tags %}
-          {% endfor %}
-          {% assign tags = tags | uniq %}
-          {% for tag in tags %}
-          {% assign slug = tag | slugify %}
-          <input type="radio" name="shuffle-filter" id="filter-{{ slug }}" value="{{ slug }}" class="btn-check" autocomplete="off"/>
-          <label class="btn btn-primary" for="filter-{{ slug }}">
-            {% if tag == "all" %}Tout{% else %}{{ tag }}{% endif %}
-          </label>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    <div class="row shuffle-wrapper">
+<div class="row mb-4">
+  <div class="col-12">
+    <!-- <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons" role="group" aria-label="Filtres"> -->
+    <div class="btn-group-sm btn-group-toggle" data-toggle="buttons" role="group" aria-label="Filtres">
+      {% assign tags = 'all' | split: ' ' %}
       {% for item in site.portfolio %}
-        {% include portfolio-component.html item=item %}
+        {% assign tags = tags | concat: item.tags %}
+      {% endfor %}
+      {% assign tags = tags | uniq %}
+      {% for tag in tags %}
+      {% assign slug = tag | slugify %}
+      <input type="radio" name="shuffle-filter" id="filter-{{ slug }}" value="{{ slug }}" class="btn-check" autocomplete="off"/>
+      <label class="btn btn-primary" for="filter-{{ slug }}">
+        {% if tag == "all" %}Tout{% else %}{{ tag }}{% endif %}
+      </label>
       {% endfor %}
     </div>
   </div>
-</section>
+</div>
+<div class="row shuffle-wrapper">
+  {% for item in site.portfolio %}
+    {% include portfolio-component.html item=item %}
+  {% endfor %}
+</div>
 <!-- /portfolio -->

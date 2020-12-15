@@ -1,11 +1,11 @@
 {% for p in include.collection %}
-<div class="row mb-5 justify-content-center">
 	{% assign is_odd = forloop.index | modulo: 2 %}
-		<div class="col-md-2 {% unless is_odd == 1 %}order-md-last{% endunless %}">
-			<img src="{{ p.image }}" alt="illustration" class="rounded-circle w-100">
+	<div class="row mb-5 justify-content-center show-on-scroll {% if is_odd == 1 %}fade-left{% else %}fade-right{% endif %}">
+		<div class="col-md-2 d-flex{% unless is_odd == 1 %} order-md-last{% endunless %}">
+			<img src="{{ p.image }}" alt="illustration" class="w-100">
 		</div>
-	<div class="col-md-6 d-flex justify-content-center flex-column">
-		{{ p.content | markdownify }}
+		<div class="col-md-6 d-flex justify-content-center flex-column">
+			{{ p.content | markdownify }}
+		</div>
 	</div>
-</div>
 {% endfor %}

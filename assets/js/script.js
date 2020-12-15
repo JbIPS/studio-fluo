@@ -100,4 +100,25 @@
         })
     }
 
+    // Animations on scroll
+    const callback = function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+              } else {
+                entry.target.classList.remove('is-visible');
+              }
+        });
+      };
+      
+    const observer = new IntersectionObserver(callback, {
+        rootMargin: '-120px 0px -80px',
+        //threshold: 0.8
+    });
+    
+    const targets = document.querySelectorAll(".show-on-scroll");
+    targets.forEach(function(target) {
+        observer.observe(target);
+    });
+
 })();
