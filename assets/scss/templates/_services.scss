@@ -1,0 +1,39 @@
+.service {
+  color: $white;
+  font-weight: 700;
+  font-size: 18px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 72px;
+  }
+
+  .green {
+    background-color: $dark-green;
+    
+    h2 {
+      color: $green;
+    }
+  }
+  .blue {
+    background-color: $dark-blue;
+
+    h2 {
+      color: $blue;
+    }
+  }
+  .yellow {
+    background-color: $dark-yellow;
+
+    h2 {
+      color: $yellow;
+    }
+  }
+  .magenta {
+    background-color: $dark-magenta;
+    
+    h2 {
+      color: $magenta;
+    }
+  }
+}

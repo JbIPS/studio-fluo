@@ -20,14 +20,19 @@ $text-color-dark: {{ site.data.design.text-color-dark }};
 $text-color-light: {{ site.data.design.text-color-light }};
 $body-color:{{ site.data.design.body-color }};
 $border-color: {{ site.data.design.border-color }};
+$dark-green: {{ site.data.design.dark-green }};
+$dark-blue: {{ site.data.design.dark-blue }};
+$dark-yellow: {{ site.data.design.dark-yellow }};
+$dark-magenta: {{ site.data.design.dark-magenta }};
+$dark-orange: {{ site.data.design.dark-orange }};
 $black: #000;
 $white: #fff;
 $gray: {{ site.data.design.text-color-dark }};
-$green : #04E762;
-$blue: #1BE7FF;
-$yellow: #FFB800;
-$magenta: #DC0073;
-$orange: #FF5714;
+$green : {{ site.data.design.green }};
+$blue: {{ site.data.design.blue }};
+$yellow: {{ site.data.design.yellow }};
+$magenta: {{ site.data.design.magenta }};
+$orange: {{ site.data.design.orange }};
 $themeColours: ($green, $blue, $yellow, $magenta, $orange);
 
 // Font Variables
@@ -57,3 +62,7 @@ $secondary-font: {{ site.data.design.secondary-font }};
 @import 'templates/portfolio';
 
 @import 'templates/fuzzy-button';
+
+@import 'templates/contact';
+
+@import 'templates/services';

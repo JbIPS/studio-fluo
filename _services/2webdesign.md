@@ -1,6 +1,6 @@
 ---
 title: Web
-image: /assets/images/illustrations/icon-webdesign.svg
+image: /assets/images/illustrations/web.webp
 category: design
 excerpt: |
   Logo, Chartre graphique, Refonte d'identité  

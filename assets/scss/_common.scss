@@ -8,8 +8,7 @@ body {
   color: $white;
 }
 
-ol,
-ul {
+ol, ul {
   list-style-type: none;
   margin: 0px;
 }
@@ -59,41 +58,6 @@ a.text-dark{
   font-family: $primary-font;
 }
 
-.service section {
-  color: $white;
-  font-weight: 700;
-  font-size: 18px;
-
-  &.green {
-    background-color: #03B54D;
-    
-    h2 {
-      color: #5EFDA0;
-    }
-  }
-  &.blue {
-    background-color: #00A5B8;
-
-    h2 {
-      color: #5CEFFF;
-    }
-  }
-  &.yellow {
-    background-color: #B88100;
-
-    h2 {
-      color: #FFCE5C;
-    }
-  }
-  &.magenta {
-    background-color: #B8005F;
-    
-    h2 {
-      color: #FF5CB0;
-    }
-  }
-}
-
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -106,7 +70,7 @@ a.text-dark{
 }
 
 .bg-image {
-  &.education, &.contact {
+  &.education {
     background-image: url(/assets/images/backgrounds/education-bg.png);
     background-color: inherit;
     background-size: cover;

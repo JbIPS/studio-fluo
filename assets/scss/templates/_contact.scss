@@ -1,0 +1,56 @@
+.contact {
+	.lead {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#mail {
+		h2 {
+			color: $dark-green;
+		}
+
+		a {
+			color: $dark-green;
+		}
+	}
+
+	#téléphone {
+		h2 {
+			color: $dark-blue;
+		}
+
+		a {
+			color: $dark-blue;
+		}
+	}
+
+	#en-physique {
+		h2 {
+			color: $dark-yellow;
+		}
+
+		strong {
+			color: $dark-yellow;
+		}
+	}
+
+	#réseaux-sociaux {
+		h2 {
+			color: $dark-magenta;
+		}
+
+		a {
+			color: $dark-magenta;
+		}
+	}
+
+	#boutiques-en-ligne {
+		h2 {
+			color: $dark-orange;
+		}
+
+		a {
+			color: $dark-orange;
+		}
+	}
+}
