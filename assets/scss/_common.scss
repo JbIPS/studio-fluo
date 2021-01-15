@@ -19,6 +19,14 @@ img {
   border: 0;
 }
 
+a {
+  color: $magenta;
+
+  &:hover {
+    color: $green;
+  }
+}
+
 a,
 a:hover,
 a:focus {
@@ -42,10 +50,6 @@ a.text-dark{
   }
 }
 
-a:hover {
-  color: $primary-color;
-}
-
 .clickable {
   cursor: pointer;
 }
@@ -53,6 +57,41 @@ a:hover {
 .section-title {
   margin-bottom: 80px;
   font-family: $primary-font;
+}
+
+.service section {
+  color: $white;
+  font-weight: 700;
+  font-size: 18px;
+
+  &.green {
+    background-color: #03B54D;
+    
+    h2 {
+      color: #5EFDA0;
+    }
+  }
+  &.blue {
+    background-color: #00A5B8;
+
+    h2 {
+      color: #5CEFFF;
+    }
+  }
+  &.yellow {
+    background-color: #B88100;
+
+    h2 {
+      color: #FFCE5C;
+    }
+  }
+  &.magenta {
+    background-color: #B8005F;
+    
+    h2 {
+      color: #FF5CB0;
+    }
+  }
 }
 
 .bg-cover {

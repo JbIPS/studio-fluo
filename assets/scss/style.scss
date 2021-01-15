@@ -23,8 +23,12 @@ $border-color: {{ site.data.design.border-color }};
 $black: #000;
 $white: #fff;
 $gray: {{ site.data.design.text-color-dark }};
-
-$themeColours: (#04E762, #1BE7FF, #FFB800, #DC0073, #FF5714);
+$green : #04E762;
+$blue: #1BE7FF;
+$yellow: #FFB800;
+$magenta: #DC0073;
+$orange: #FF5714;
+$themeColours: ($green, $blue, $yellow, $magenta, $orange);
 
 // Font Variables
 $primary-font: {{ site.data.design.primary-font }};

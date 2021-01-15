@@ -27,15 +27,17 @@ body {
 }
 
 p {
+  /*color: $text-color;
   font-weight: 400;
-  color: $text-color;
-  font-size: 15px;
+  font-size: 15px;*/
   line-height: 1.8;
   font-family: $secondary-font;
 }
+h1 {
+  color: $primary-color;
+}
 
 h1,h2 {
-  color: $primary-color;
   font-family: $primary-font;
   line-height: 1.2;
 }
@@ -66,6 +68,10 @@ h2 {
   font-size: 60px;
   @include desktop {
     font-size: 50px;
+  }
+
+  &.service {
+    font-size: 72px;
   }
 }
 

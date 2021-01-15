@@ -1,9 +1,10 @@
 ---
 title: Illustration	
-image: /assets/images/illustrations/icon-illustration.svg
+image: /assets/images/illustrations/illus.webp
 excerpt: |
   Design textile  
   Aquarelles personalisées
+color: magenta
 ---
 Finalement, pour sortir du lot, quoi de mieux qu'une illustration unique ? Qu'il s'agisse d'un design pour vos goodies, d'icônographie pour votre site ou tout simplement d'un poster, les commandes sont les bienvenues ! À vous de définir le style et le thème, je me charge du reste.
 

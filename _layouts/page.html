@@ -17,8 +17,6 @@ layout: default
   {% endfor %}
 </section>
 <!-- /page title -->
-<section class="section pt-5">
-  <div class="container">
+<main class="section{% if page.class %} {{ page.class }}{% endif %}">
     {{ content }}
-  </div>
-</section>
+</main>
