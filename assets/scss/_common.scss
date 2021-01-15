@@ -323,6 +323,9 @@ textarea.form-control{
   &.fade-left {
     opacity: 0;
     position: relative;
+		@include mobile {
+			left: 0;
+		}
     left: -30px;
 
     &.is-visible {
@@ -335,6 +338,9 @@ textarea.form-control{
     opacity: 0;
     position: relative;
     right: -30px;
+		@include mobile {
+			right: 0;
+		}
 
     &.is-visible {
       @include fadeIn();
