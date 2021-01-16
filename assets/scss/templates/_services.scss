@@ -1,39 +1,56 @@
-.service {
-  color: $white;
-  font-weight: 700;
-  font-size: 18px;
+.rows {
+  color: $white !important;
+  font-weight: 500;
 
   h2 {
-    font-weight: 600;
-    font-size: 72px;
+    font-weight: 700;
+    @media (min-width:1200px) {
+      font-size: 4rem !important;
+    }
   }
 
   .green {
     background-color: $dark-green;
     
-    h2 {
-      color: $green;
+    h2, h3 {
+      color: $light-green;
+    }
+
+    @at-root a#{&}:hover {
+      color: $light-green;
     }
   }
   .blue {
     background-color: $dark-blue;
 
-    h2 {
-      color: $blue;
+    h2, h3 {
+      color: $light-blue;
+    } 
+
+    @at-root a#{&}:hover {
+      color: $light-blue;
     }
   }
   .yellow {
     background-color: $dark-yellow;
 
-    h2 {
-      color: $yellow;
+    h2, h3 {
+      color: $light-yellow;
+    }
+
+    @at-root a#{&}:hover {
+      color: $light-yellow;
     }
   }
   .magenta {
     background-color: $dark-magenta;
     
-    h2 {
-      color: $magenta;
+    h2, h3 {
+      color: $light-magenta;
+    }
+
+    @at-root a#{&}:hover {
+      color: $light-magenta;
     }
   }
 }

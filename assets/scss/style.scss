@@ -33,7 +33,13 @@ $blue: {{ site.data.design.blue }};
 $yellow: {{ site.data.design.yellow }};
 $magenta: {{ site.data.design.magenta }};
 $orange: {{ site.data.design.orange }};
+$light-green : {{ site.data.design.light-green }};
+$light-blue: {{ site.data.design.light-blue }};
+$light-yellow: {{ site.data.design.light-yellow }};
+$light-magenta: {{ site.data.design.light-magenta }};
+$light-orange: {{ site.data.design.light-orange }};
 $themeColours: ($green, $blue, $yellow, $magenta, $orange);
+$themeDarkColours: ($dark-green, $dark-blue, $dark-yellow, $dark-magenta, $dark-orange);
 
 // Font Variables
 $primary-font: {{ site.data.design.primary-font }};

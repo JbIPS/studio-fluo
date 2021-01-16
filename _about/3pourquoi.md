@@ -1,8 +1,8 @@
 ---
-image: /assets/images/illustrations/champi.svg
+title: Mes convictions
+image: /assets/images/illustrations/about-valeurs.webp
+color: yellow
 ---
-## Mais pourquoi ?
-
 Ma volonté est de mettre en lumière les projets qui résonnent avec mes convictions : respect du vivant et solidarité. J'ai toujours eu de forts engagements associatifs et citoyens, que ce soit dans le zéro déchet ou l'Économie Sociale et Solidaire plus généralement avec [Anciela](https://www.anciela.info/). Aujourd'hui, je veux également que mon activité professionnel se mette au service de mon engagement.
 
 Je veux faire émerger des projets qui changeront, en bien, notre société. Je veux leur éviter d'être confondu avec du vulgaire _greenwashing_. En tant que consommatrice exigeante et habituée de l'ESS, je saurai retranscrire votre engagement et votre authenticité dans votre identité et vos visuels.

@@ -4,13 +4,13 @@ layout: page
 <section class="pt-5">
 	{{ content | markdownify }}
 	<div class="row my-5">
-		<div class="col-6 d-flex flex-column justify-content-center align-items-center">
+		<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
 			{% assign c = page.contacts[0] %}
 			{% include contact.html contact=c %}
 			{% assign c = page.contacts[1] %}
 			{% include contact.html contact=c %}
 		</div>
-		<div class="col-6 d-flex flex-column justify-content-center align-items-center">
+		<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
 			{% assign c = page.contacts[2] %}
 			{% include contact.html contact=c %}
 			{% assign c = page.contacts[3] %}

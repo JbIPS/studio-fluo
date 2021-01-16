@@ -22,7 +22,7 @@ a {
   color: $magenta;
 
   &:hover {
-    color: $green;
+    color: inherit;
   }
 }
 
@@ -235,26 +235,6 @@ textarea.form-control{
   &:hover .card-body {
     transform: scale(0.99);
   }
-
-  h3 {
-    font-family: $primary-font;
-    color: $primary-color;
-  }
-}
-
-@for $i from 1 through length($themeColours) {
-  $color: nth($themeColours, $i);
-  a:nth-child(#{$i}) .card {
-    background: $color;
-
-    h3 {
-      color: $white;
-    }
-
-    p {
-      color: $primary-color;
-    }
-  }
 }
 /* /card */
 
@@ -265,10 +245,11 @@ textarea.form-control{
 .welcome p {
   font-family: $primary-font;
   
-  @for $i from 1 through length($themeColours) {
-    $color: nth($themeColours, $i);
+  @for $i from 1 through length($themeDarkColours) {
+    $color: nth($themeDarkColours, $i);
     mark:nth-child(#{$i}) {
-      background-color: $color;
+      color: $color;
+      background: transparent;
     }
   }
 
