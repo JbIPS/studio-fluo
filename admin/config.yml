@@ -1,0 +1,180 @@
+backend:
+  name: github
+  repo: JbIPS/studiofluo.fr
+  branch: master # Branch to update (optional; defaults to master)
+  site_domain: studiofluo.fr #fervent-booth-0686d7.netlify.com
+
+media_folder: "assets/images/uploads"
+
+site_url: https://studiofluo.fr
+locale: 'fr'
+
+collections:
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio" # Used in the UI
+    folder: "_portfolio" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "portfolio/{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - label: Galerie
+        name: gallery
+        widget: list
+        fields:
+          - {label: "URL", name: "src", widget: "string"}
+          - {label: "Texte alternatif", name: "title", widget: "string"}
+  - name: "clients" # Used in routes, e.g., /admin/collections/blog
+    label: "Clients" # Used in the UI
+    folder: "_clients" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "portfolio"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "URL du client", name: "client_url", widget: "string"}
+  - name: "education" # Used in routes, e.g., /admin/collections/blog
+    label: "Education" # Used in the UI
+    folder: "_education" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Année", name: "year", widget: "number"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "team" # Used in routes, e.g., /admin/collections/blog
+    label: "Partenaires" # Used in the UI
+    folder: "_team" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "designation", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+  - name: "experiences" # Used in routes, e.g., /admin/collections/blog
+    label: "Expériences" # Used in the UI
+    folder: "_experiences" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    preview_path: "about"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Période", name: "periode", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "process" # Used in routes, e.g., /admin/collections/blog
+    label: "Process" # Used in the UI
+    folder: "_process" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Organisation", name: "organization", widget: "string"}
+  - name: "skills" # Used in routes, e.g., /admin/collections/blog
+    label: "Compétences" # Used in the UI
+    folder: "_skills" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Couleur", name: "color", widget: "color"}
+      - {label: "Valeur", name: "value", widget: "string", pattern: ['%$', 'Doit finir par %']}
+  - name: "services" # Used in routes, e.g., /admin/collections/blog
+    label: "Services" # Used in the UI
+    folder: "_services" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image", name: "icon", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Activé", name: "active", widget: "boolean"}
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Auteur", name: "author", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "configuration" # Used in routes, e.g., /admin/collections/blog
+    label: "Configurations" # Used in the UI
+    files:
+      - label: "Général"
+        name: global
+        file: _data/settings.yml
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Favicon", name: "favicon", widget: "image"}
+          - {label: "Auteur", name: "author", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "E-mail", name: "email", widget: "string", pattern: ['^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$', 'Adresse e-mail invalide']}
+          - {label: "Téléphone", name: "phone", widget: "string", pattenr: ['^\+\d{2} \d \d{2} \d{2} \d{2} \d{2}$', '+XX X XX XX XX XX']}
+          - {label: "Adresse", name: "address", widget: "string"}
+          - {label: "Copyright", name: "copyright", widget: "string"}
+          - label: Menu
+            name: menu
+            widget: list
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Lien", name: "link", widget: "string"}
+          - {label: "Baseline", name: "baseline", widget: "string"}
+          - label: Réseaux Sociaux
+            name: social
+            widget: list
+            fields:
+              - label: "Icône"
+                name: "icon"
+                widget: "select"
+                options: 
+                  - {label: "Facebook", value: "ti-facebook"}
+                  - {label: "Instagram", value: "ti-instagram"}
+                  - {label: "Dribble", value: "ti-dribble"}
+                  - {label: "LinkedIn", value: "ti-linkedin"}
+                  - {label: "Twitter", value: "ti-twitter"}
+              - {label: "Lien", name: "link", widget: "string"}
+          - {label: "Titre témoignage", name: "testimonial", widget: "string"}
+          - {label: "Titre partenaires", name: "team", widget: "string"}
+          - {label: "Titre clients", name: "clients", widget: "string"}
+          - {label: "Titre contact", name: "contact", widget: "string"}
+          - {label: "Titre formation", name: "education", widget: "string"}
+          - {label: "Titre expérience", name: "experiences", widget: "string"}
+          - {label: "Titre process", name: "process", widget: "string"}
+          - {label: "Titre services", name: "services", widget: "string"}
+          - {label: "Titre compétences", name: "skills", widget: "string"}
+      - label: "Design"
+        name: design
+        file: _data/design.yml
+        fields:
+          - {label: "Couleur primaire", name: "primary-color", widget: "color"}
+          - {label: "Couleur secondaire", name: "secondary-color", widget: "color"}
+          - {label: "Couleur du texte", name: "text-color", widget: "color"}
+          - {label: "Couleur du texte foncé", name: "text-color-dark", widget: "color"}
+          - {label: "Couleur du texte clair", name: "text-color-light", widget: "color"}
+          - {label: "Couleur par défaut", name: "body-color", widget: "color"}
+          - {label: "Couleur des bordures", name: "border-color", widget: "color"}
+          - {label: "Font primaire", name: "primary-font", widget: "string"}
+          - {label: "Font secondaire", name: "secondary-font", widget: "string"}
+          - label: Illustrations
+            name: illustrations
+            widget: list
+            allow_add: false
+          - label: Formes
+            name: shapes
+            widget: list
+            allow_add: false
