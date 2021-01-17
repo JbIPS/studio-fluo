@@ -45,6 +45,10 @@ $themeDarkColours: ($dark-green, $dark-blue, $dark-yellow, $dark-magenta, $dark-
 $primary-font: {{ site.data.design.primary-font }};
 $secondary-font: {{ site.data.design.secondary-font }};
 
+// Bootstrap
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Custom
 @import 'mixins';
 
 @import 'typography';

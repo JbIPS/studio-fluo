@@ -68,7 +68,6 @@
     const shuffleWrapper = document.querySelector('.shuffle-wrapper');
     if(shuffleWrapper) {
         var Shuffle = window.Shuffle;
-        var jQuery = window.jQuery;
 
         const selectFilter = function(category) {
             const cat = category === "" ? "all" : category;
@@ -98,6 +97,8 @@
                 }
                }
         })
+
+        document.addEventListener('lazyloaded', () =>  myShuffle.layout());
     }
 
     // Animations on scroll
