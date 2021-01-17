@@ -21,8 +21,8 @@ jobs:
           enable_cache: true
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
-      - name: PurgeCss
-        run: npx purgecss --css _site/assets/css/style.css --content "_site/**/*.html" --output _site/assets/css/style.purged.css
+      #- name: PurgeCss
+      #  run: npx purgecss --css _site/assets/css/style.css --content "_site/**/*.html" --output _site/assets/css/style.purged.css
       - name: Critical
         run: cat _site/index.html | npx critical --base _site --inline > index.html
       - name: 🚀 deploy
