@@ -24,7 +24,7 @@ jobs:
       #- name: PurgeCss
       #  run: npx purgecss --css _site/assets/css/style.css --content "_site/**/*.html" --output _site/assets/css/style.purged.css
       - name: Critical
-        run: cat _site/index.html | npx critical --base _site --inline > _site/index.html
+        run:  npx critical _site/index.html --base _site --inline > _site/index.critical.html && mv _site/index.critical.html _site/index.html
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
