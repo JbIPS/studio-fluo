@@ -1,0 +1,32 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+      - name: 💎 setup ruby
+        uses: ruby/setup-ruby@v1.62.0
+        with:
+          ruby-version: 2.7 # can change this to 2.7 or whatever version you prefer
+          bundler: latest
+      - name: 🔨 install dependencies & build site
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+      - name: PurgeCss
+        run: npx purgecss --css _site/assets/css/style.css --content "_site/**/*.html" --output _site/assets/css/style.purged.css
+      - name: Critical
+        run: cat _site/index.html | npx critical --base _site --inline > index.html
+      - name: 🚀 deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
