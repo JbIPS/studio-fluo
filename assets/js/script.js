@@ -1,8 +1,6 @@
 (function () {
     'use strict';
 
-    console.log("loaded !");
-
     // Sticky Menu    
     const foldHeader = function () {
         const distanceY = window.pageYOffset || document.documentElement.scrollTop,
