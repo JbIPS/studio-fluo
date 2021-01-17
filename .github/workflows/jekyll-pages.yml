@@ -26,7 +26,7 @@ jobs:
       - name: Critical
         run:  npx critical _site/index.html --base _site --inline > _site/index.critical.html
       - name: Cleanup
-        run: ls _site && ls _site/assets/scss && mv _site/index.critical.html _site/index.html && mv _site/assets/scss/style.purged.css _site/assets/scss/style.css && cat _site/index.html
+        run: mv _site/index.critical.html _site/index.html && mv _site/assets/scss/style.purged.css _site/assets/scss/style.css
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

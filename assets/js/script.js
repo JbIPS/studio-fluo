@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-
+    console.log("loaded !");
 
     // Sticky Menu    
     const foldHeader = function () {
