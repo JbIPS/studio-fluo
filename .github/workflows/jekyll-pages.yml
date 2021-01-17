@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
       - name: PurgeCss
-        run: npx purgecss --css _site/assets/scss/style.css --content "_site/**/*.html" --output _site/assets/scss/style.purged.css
+        run: npx purgecss --css _site/assets/scss/style.css --content "_site/**/*.html" --output _site/assets/scss/style.purged.css -s nav-bg is-visible
       - name: Critical
         run:  npx critical _site/index.html --base _site --inline > _site/index.critical.html
       - name: Cleanup
