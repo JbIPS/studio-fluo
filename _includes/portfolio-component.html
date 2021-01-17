@@ -7,7 +7,7 @@
         data-groups='{{ tags | jsonify}}'>
 	<a href="{{ include.item.url }}">
 		<div class="position-relative rounded hover-wrapper">
-			<img src="{{ include.item.image | relative_url }}" alt="portfolio-image"
+			<img data-src="{{ include.item.image | relative_url }}" alt="portfolio-image"
 				class="img-fluid rounded w-100 d-block lazyload">
 			<div class="hover-overlay">
 				<div class="hover-content">
