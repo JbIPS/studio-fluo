@@ -14,6 +14,7 @@ jobs:
         uses: ruby/setup-ruby@v1.62.0
         with:
           ruby-version: 2.7 # can change this to 2.7 or whatever version you prefer
+          bundler: latest
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
