@@ -5,7 +5,7 @@ title: Mes réalisations
 button: Voir plus
 ---
 <!-- portfolio -->
-<section class="pt-5">
+<section class="pt-5 container">
   <div class="row mb-4">
     <div class="col-12">
       <!-- <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons" role="group" aria-label="Filtres"> -->
@@ -19,7 +19,7 @@ button: Voir plus
         {% assign slug = tag | slugify %}
         <input type="radio" name="shuffle-filter" id="filter-{{ slug }}" value="{{ slug }}" class="btn-check"
           autocomplete="off" />
-        <label class="btn btn-primary" for="filter-{{ slug }}">
+        <label class="btn btn-primary mb-2" for="filter-{{ slug }}">
           {% if tag == "all" %}Tout{% else %}{{ tag }}{% endif %}
         </label>
         {% endfor %}
@@ -31,5 +31,6 @@ button: Voir plus
     {% include portfolio-component.html item=item %}
     {% endfor %}
   </div>
+  <div id="instafeed"></div>
 </section>
 <!-- /portfolio -->
