@@ -4,7 +4,7 @@ layout: page
 <section class="section client">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 py-5">
         <h2 class="mb-4">{{ page.title | escape }}</h2>
         <div class="mb-3">
         {% for tag in page.tags %}
@@ -12,18 +12,20 @@ layout: page
         {% endfor %}
         </div>
         <div class="d-flex align-items-start">
-          <img src="{{page.image | relative_url }}" class="align-self-start me-3 w-25" alt="{{page.title}}">
-          {{ content }}
+          <img src="{{page.image | relative_url }}" class="align-self-start me-3 w-25 rounded" alt="{{page.title}}">
+          <div>
+            {{ content }}
+          </div>
         </div>
         <div class="row mt-3" data-bs-toggle="modal" data-bs-target="#lightbox">
           {% for image in page.gallery %}
             <div class="col-6 col-md-4 col-lg-3 clickable">
-              <img src="{{ image.src | replace: '.', '-small.'}}" class="img-fluid rounded mb-3"  alt="{{ image.title }}" data-target="#carousel" data-slide-to="{{ forloop.index0 }}">
+              <img src="{{ image.src | replace: '.', '-small.'}}" class="img-fluid rounded mb-3"  alt="{{ image.title }}" data-bs-target="#carousel" data-bs-slide-to="{{ forloop.index0 }}">
             </div>
           {% endfor %}
         </div>
         <div class="modal fade" id="lightbox" role="dialog" aria-labelledby="lightbox" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-dialog modal-dialog-centered mw-75 mw-lg-50" role="document">
             <div class="modal-content">
               <div class="modal-body">
                 <!-- Carousel -->

@@ -7,6 +7,6 @@ excerpt: |
   Broderies
 color: yellow
 ---
-Envie d'offrir un bavoir original au nouveau bébé de votre cousine ? J'ai eu la même envie et c'est comme ça que je me suis lancée dans la couture pour nourrissons. Un bavoir, un hochet ou un doudou, je m'amuse à **créer des modèles** toujours différents en jouant sur les textures et les motifs. Chaque réalisation est faite manuellement par moi en utilisant que du tissus **bio, le plus éthique et local** possible.
+Envie d'offrir un bavoir original au nouveau bébé de votre cousine ? Moi aussi et c'est comme ça que je me suis lancée dans la couture pour nourrissons. Un bavoir, un hochet ou un doudou, je m'amuse à **créer des modèles** toujours différents en jouant sur les textures et les motifs. Chaque réalisation est faite manuellement en utilisant que du tissus **bio ou upcyclé, le plus éthique et local** possible.
 
-Une envie, un besoin original pour tous types de créations ? J'aime également expérimenter sur d'autres accessoires pour des coiffures, notamment des chouchous, mais toutes les autres idées de créations seront toujours bio et **faites main** !
+Vous voulez un cadeau pour adulte ? J'aime également expérimenter sur des accessoires de coiffures et suis toujours ouvertes à vos idées !

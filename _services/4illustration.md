@@ -1,6 +1,6 @@
 ---
 title: Illustration	
-image: /assets/images/illustrations/illus.webp
+image: /assets/images/illustrations/illus.png
 excerpt: |
   Design textile  
   Aquarelles personalisées

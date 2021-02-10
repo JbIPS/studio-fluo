@@ -18,8 +18,7 @@ contacts:
 - title: Boutiques en ligne
   text: |
     Certaines de mes créations sont en vente directement sur des sites de e-commerce : 
-    - [Sreadshirt](https://www.spreadshirt.fr/shop/user/studio+fluo/)
-    - Etsy
+    - [Spreadshirt](https://www.spreadshirt.fr/shop/user/studio+fluo/)
 ---
 {: .lead .text-center}
 Quelque chose vous a taper dans l'oeil ? Vous avez une demande spéciale ? Laissez moi un message et je pourrais vous guider au mieux.

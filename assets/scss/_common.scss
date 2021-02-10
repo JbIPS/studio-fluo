@@ -293,3 +293,13 @@ textarea.form-control{
     }
   }
 }
+
+.mw-75 {
+  max-width: 75%;
+}
+
+@include media-breakpoint-up(lg) {
+  .mw-lg-50 {
+    max-width: 50%;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: Print
-image: /assets/images/illustrations/print.webp
+image: /assets/images/illustrations/print.png
 excerpt: |
   Affiches, Cartes de Visite, Flyers  
   Faire-part et papeteries diverses
