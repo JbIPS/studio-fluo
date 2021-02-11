@@ -1,149 +1,219 @@
-
-    .b_l_quad .button_spots{
-        @for $i from 1 through 20{
-            &:nth-child(#{$i}){
-                padding:random(3) + 2 + px;
+@include media-breakpoint-up(lg) {
+    .b_l_quad .button_spots {
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+                padding: random(3) + 2 + px;
                 left: -25 + ($i * 12) + px;
                 top: 50 + px;
             }
         }
-        @for $i from 20 through 40{
-            &:nth-child(#{$i}){
-                padding:random(3) + 2 + px;
+
+        @for $i from 20 through 40 {
+            &:nth-child(#{$i}) {
+                padding: random(3) + 2 + px;
                 left: -255 + ($i * 12) + px;
                 top: -12 + px;
             }
         }
-        @for $i from 40 through 46{
-            &:nth-child(#{$i}){
-                padding:random(3) + 2 + px;
+
+        @for $i from 40 through 46 {
+            &:nth-child(#{$i}) {
+                padding: random(3) + 2 + px;
                 left: 204px;
                 top: -488 + ($i * 12) + px;
             }
         }
 
-        @for $i from 46 through 52{
-            &:nth-child(#{$i}){
-                padding:random(3) + 2 + px;
+        @for $i from 46 through 52 {
+            &:nth-child(#{$i}) {
+                padding: random(3) + 2 + px;
                 left: -10px;
                 top: -568 + ($i * 12) + px;
             }
         }
     }
-    .button_spots{
-        position:absolute;
-        border-radius:100px;
-        background:green;
-        opacity:0;
-        animation:opacity 1s;
-        @for $i from 1 through 52{
-            &:nth-of-type(#{$i}){
-                transform-origin:90px - random(10) 20px - random(10);
-                background:hsla(350 + random(399) ,57% - random(10) ,65%,1);
-                box-shadow:0px 0px 10px rgba(255,255,255,0.12);
-                transition:all 1s + random(10)/10;
+
+    .button_spots {
+        position: absolute;
+        border-radius: 100px;
+        background: green;
+        opacity: 0;
+        animation: opacity 1s;
+
+        @for $i from 1 through 52 {
+            &:nth-of-type(#{$i}) {
+                transform-origin: 90px - random(10) 20px - random(10);
+                background: hsla(350 + random(399), 57% - random(10), 65%, 1);
+                box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+                transition: all 1s + random(10)/10;
             }
         }
-		}
-    .button_inner{
-				position: relative;
-				display: block;
-        width:200px;
-				height:50px;
-				padding: 0;
-				border-radius:2px;
-				margin:30px auto;
-				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
-				font-weight: 100;
-				font-size: 22px;
-				line-height: 41px;
-				border: 2px solid $primary-color;
-				color: $primary-color;
-				text-align: center;
-				transition:all .3s,box-shadow .2s,transform .2s .2s;
-        &:hover{
+    }
+
+    .button_inner {
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 50px;
+        padding: 0;
+        border-radius: 2px;
+        margin: 30px auto;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 41px;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        text-align: center;
+        transition: all .3s, box-shadow .2s, transform .2s .2s;
+
+        &:hover {
             color: $secondary-color;
             background: $primary-color;
             box-shadow: 0px 17px 18px -14px rgba(0, 0, 0, 0.08);
         }
-        &:hover .button_spots{
-            @for $i from 1 through 19{
-                &:nth-of-type(#{$i}){
-                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+
+        &:hover .button_spots {
+            @for $i from 1 through 19 {
+                &:nth-of-type(#{$i}) {
+                    animation: spot-#{$i} .7s .4/random(10)+random(10)/10+s linear infinite;
                 }
             }
-            @for $i from 20 through 40{
-                &:nth-of-type(#{$i}){
-                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+
+            @for $i from 20 through 40 {
+                &:nth-of-type(#{$i}) {
+                    animation: spot-#{$i} .7s .4/random(10)+random(10)/10+s linear infinite;
                 }
             }
-            @for $i from 40 through 46{
-                &:nth-of-type(#{$i}){
-                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+
+            @for $i from 40 through 46 {
+                &:nth-of-type(#{$i}) {
+                    animation: spot-#{$i} .7s .4/random(10)+random(10)/10+s linear infinite;
                 }
             }
-            @for $i from 46 through 54{
-                &:nth-of-type(#{$i}){
-                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+
+            @for $i from 46 through 54 {
+                &:nth-of-type(#{$i}) {
+                    animation: spot-#{$i} .7s .4/random(10)+random(10)/10+s linear infinite;
                 }
             }
         }
     }
 
-@for $i from 1 through 20{
-    @keyframes spot-#{$i}{
-        from{opacity:0;}
-        to{transform:translateY(30px) translatex(-20px + $i*2);opacity:.6;}
+    @for $i from 1 through 20 {
+        @keyframes spot-#{$i} {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(30px) translatex(-20px + $i*2);
+                opacity: .6;
+            }
+        }
     }
-}
-@for $i from 20 through 40{
-    @keyframes spot-#{$i}{
-        from{opacity:0;}
-        to{transform:translateY(-30px) translatex(-50px + $i*2);opacity:.6;}
+
+    @for $i from 20 through 40 {
+        @keyframes spot-#{$i} {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(-30px) translatex(-50px + $i*2);
+                opacity: .6;
+            }
+        }
     }
-}
-@for $i from 40 through 45{
-    @keyframes spot-#{$i}{
-        from{opacity:0;}
-        to{transform:translateY(-86px + $i*2) translatex(40px);opacity:.6;}
+
+    @for $i from 40 through 45 {
+        @keyframes spot-#{$i} {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(-86px + $i*2) translatex(40px);
+                opacity: .6;
+            }
+        }
     }
-}
-@for $i from 46 through 54{
-    @keyframes spot-#{$i}{
-        from{opacity:0;}
-        to{transform:translateY(-99px + $i*2) translatex(-40px);opacity:.6;}
+
+    @for $i from 46 through 54 {
+        @keyframes spot-#{$i} {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(-99px + $i*2) translatex(-40px);
+                opacity: .6;
+            }
+        }
     }
-}
 
-@keyframes opacity{
-    from{}
-    to{opacity:0;}
-}
+    @keyframes opacity {
+        from {}
 
-@keyframes rotate{
-    from{opacity:.8}
-    to{transform:rotate(360deg);opacity:.8}
-}
+        to {
+            opacity: 0;
+        }
+    }
 
-@keyframes down{
-    from{left:10px;}
-    to{left:57px;}
-}
+    @keyframes rotate {
+        from {
+            opacity: .8
+        }
 
-@keyframes spew{
-    from{opacity:0;}
-    to{opacity:0.8;}
-}
+        to {
+            transform: rotate(360deg);
+            opacity: .8
+        }
+    }
 
-@keyframes final{
-    from{opacity:1;}
-    to{opacity:0;}
-}
-@keyframes finalbox{
-    from{}
-    to{width:50px;}
-}
-@keyframes tick{
-    from{}
-    to{transform:scale(1) rotate(-90deg)}
+    @keyframes down {
+        from {
+            left: 10px;
+        }
+
+        to {
+            left: 57px;
+        }
+    }
+
+    @keyframes spew {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    @keyframes final {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes finalbox {
+        from {}
+
+        to {
+            width: 50px;
+        }
+    }
+
+    @keyframes tick {
+        from {}
+
+        to {
+            transform: scale(1) rotate(-90deg)
+        }
+    }
 }
