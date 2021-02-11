@@ -275,7 +275,7 @@ textarea.form-control{
 
     &.is-visible {
       @include fadeIn();
-      left: 0;
+      transform: translateX(30px);
     }
   }
   
@@ -289,7 +289,7 @@ textarea.form-control{
 
     &.is-visible {
       @include fadeIn();
-      right: 0;
+      transform: translateX(-30px);
     }
   }
 }
