@@ -1,17 +1,13 @@
 title: Studio Fluo
 logo: /assets/images/uploads/logo-white.svg
-favicon: /assets/images/favicon.png
 author: Studio Fluo
-description: Studio graphique engagé pour mettre de la couleur dans vos idées
+description: Studio graphique engagé pour mettre de la couleur dans vos idées !
+  Ici, on design , on dessine et on décide . Vous avez besoin d’une nouvelle
+  charte ? Je m’en occupe ! Des illustrations pour donner vie à vos documents ?
+  C’est possible ! Créer un faire-part unique ? Vous êtes au bon endroit !
 email: flora@studiofluo.fr
-phone: +33 6 83 65 31 74
 address: Rhône-Alpes, entre Lyon & Pierrelatte
 copyright: Copyright &copy; 2020-2021. Design et développement par Studio Fluo
-intro: |
-  ## Bonjour et bienvenue dans votre espace créatif !     
-  
-  {: .lead}
-  Ici, on <mark>design</mark>, on <mark>dessine</mark> et on <mark>décide</mark>. Vous avez besoin d'une nouvelle charte ? Je m'en occupe ! Des illustrations pour donner vie à vos documents ? C'est possible ! Créer un faire-part unique ? Vous êtes au bon endroit !
 menu:
   - name: Accueil
     link: /
@@ -24,6 +20,22 @@ menu:
   - name: Contact
     link: /contact
 baseline: Des <br> couleurs <br> dans vos idées
+testimonial: Témoignages
+team: Partenaires
+contact: Contactez-moi
+services: Mes services
+skills: Mes compétences
+portfolio: Mes dernières réalisations
+clients: Ils me font confiance
+education: Mes formations
+experiences: Mon historique
+intro: >
+  ## Bonjour et bienvenue dans votre espace créatif !     
+
+
+  {: .lead}
+
+  Ici, on <mark>design</mark>, on <mark>dessine</mark> et on <mark>décide</mark>. Vous avez besoin d'une nouvelle charte ? Je m'en occupe ! Des illustrations pour donner vie à vos documents ? C'est possible ! Créer un faire-part unique ? Vous êtes au bon endroit !
 social:
   - icon: ico-facebook
     link: https://www.facebook.com/studiofluodesign/
@@ -35,13 +47,6 @@ social:
     link: https://www.linkedin.com/company/studiofluodesign
     handle: studiofluodesign
 about: Qui suis-je ?
-testimonial: Témoignages
-portfolio: Mes dernières réalisations
-team: Partenaires
-clients: Ils me font confiance
-contact: Contactez-moi
-education: Mes formations
-experiences: Mon historique
+favicon: /assets/images/favicon.png
+phone: +33 6 83 65 31 74
 process: Vos visuels en 3 étapes
-services: Mes services
-skills: Mes compétences
