@@ -5,8 +5,22 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
-    
+  
+  <!-- Social meta -->
   <meta name="author" content="{{ site.data.settings.author }}">
+  <meta property="og:title" content="StudioFluo">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
+  <meta property="og:url" content="https://studiofluo.fr/">
+  <meta property="og:image" content="https://studiofluo.fr/img/banner.png">
+  <meta property="og:image:alt" content="Logo StudioFluo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="StudioFluo">
+  <meta name="twitter:description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
+  <meta name="twitter:image" content="https://studiofluo.fr/img/banner.png">
+  <meta name="twitter:image:alt" content="Logo StudioFluo">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="canonical" href="https://studiofluo.fr/">
   
   <!-- Preload fonts -->
   <link rel="preload" href="{{ '/assets/fonts/Domine-VariableFont_wght.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
