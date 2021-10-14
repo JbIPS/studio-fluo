@@ -11,9 +11,9 @@ layout: page
           <a class="btn btn-sm btn-primary" href="/portfolio#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
         </div>
-        <div class="d-flex align-items-start">
-          <img src="{{page.image | relative_url }}" class="align-self-start me-3 w-25 rounded" alt="{{page.title}}">
-          <div>
+        <div class="d-flex align-items-start flex-wrap">
+          <img src="{{page.image | relative_url }}" class="align-self-start me-3 mb-3 col-3 rounded" alt="{{page.title}}">
+          <div class="col-12 col-lg-8">
             {{ content }}
           </div>
         </div>

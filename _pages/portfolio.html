@@ -27,7 +27,8 @@ button: Voir plus
     </div>
   </div>
   <div class="row shuffle-wrapper">
-    {% for item in site.portfolio %}
+    {% assign portfolio = site.portfolio | reverse %}
+    {% for item in portfolio %}
     {% include portfolio-component.html item=item %}
     {% endfor %}
   </div>
