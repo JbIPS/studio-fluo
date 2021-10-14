@@ -2,9 +2,9 @@
 title: Video
 image: /assets/images/illustrations/video.webp
 excerpt: |
-  Accessoires pour bébé  
-  Accessoires de coiffure  
-  Broderies
+  Tournage  
+  Montage 
+  Réalisation
 color: yellow
 icon: https://studiofluo.fr/assets/images/illustrations/video.webp
 active: true
