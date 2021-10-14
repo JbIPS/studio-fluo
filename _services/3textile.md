@@ -1,6 +1,6 @@
 ---
 title: Video
-image: /assets/images/illustrations/couture.webp
+image: /assets/images/illustrations/video.webp
 excerpt: |
   Accessoires pour bébé  
   Accessoires de coiffure  
