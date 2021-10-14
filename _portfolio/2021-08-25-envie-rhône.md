@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: Envie Rhône
 description: De l'électroménager reconditionné pour tous !
 image: /assets/images/uploads/visuels-manif3.jpg

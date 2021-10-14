@@ -6,7 +6,8 @@
       </div>
     </div>
     <div class="row">
-      {% for item in site.portfolio limit:3 %}
+      {% assign items = site.portfolio | reverse %}
+      {% for item in items limit:3 %}
         {% include portfolio-component.html item=item %}
       {% endfor %}
     </div>
