@@ -1,5 +1,5 @@
 ---
-title: Video
+title: Vidéo
 image: /assets/images/illustrations/video.webp
 excerpt: |
   Organisation de tournage  
