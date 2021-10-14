@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stan
-description: Création de l'identité graphique et du site internet de Stan.
+description: L'affiliation santé simplifiée
 image: /assets/images/uploads/mockup_logo_stan.jpg
 tags:
   - Identité visuelle
