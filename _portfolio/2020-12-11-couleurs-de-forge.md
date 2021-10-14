@@ -4,12 +4,12 @@ title: Couleurs de forge
 description: Forge d'art et ferronerie
 image: /assets/images/uploads/cdf-cap-mockup-small.webp
 tags:
-- merchandising
+  - Graphisme
 gallery:
-- src: /assets/images/portfolio/CDF_logo.png
-  title: Personnalisation de tee-shirt
-- src: /assets/images/portfolio/CDF-Tshirt.jpg
-  title: Personnalisation de tee-shirt
+  - src: /assets/images/portfolio/CDF_logo.png
+    title: Personnalisation de tee-shirt
+  - src: /assets/images/portfolio/CDF-Tshirt.jpg
+    title: Personnalisation de tee-shirt
 ---
 {: .mb-5}
 ### Variation de logo pour goodies
