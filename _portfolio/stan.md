@@ -4,7 +4,7 @@ title: Stan
 description: L'affiliation santé simplifiée
 image: /assets/images/uploads/mockup_logo_stan.jpg
 tags:
-  - Identité visuelle
+  - identité visuelle
 ---
 Création de l'identité graphique de [Stan](http://stan.express/) l'outil que simplifie l'affiliation santé.
 
