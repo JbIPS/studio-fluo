@@ -4,7 +4,7 @@ title: Portraits
 description: Portraits professionels
 image: /assets/images/portfolio/Portrait-F-1.jpg
 tags: 
-- photo
+- Photo
 gallery:
   - src: /assets/images/portfolio/Portrait-F-2.jpg
     title: Portrait de femme
