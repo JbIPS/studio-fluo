@@ -3,22 +3,24 @@ layout: client
 title: Portraits
 description: Portraits professionels
 image: /assets/images/portfolio/Portrait-F-1.jpg
+tags: 
+- photo
 gallery:
   - src: /assets/images/portfolio/Portrait-F-2.jpg
     title: Portrait de femme
   - src: /assets/images/portfolio/Portrait-F-3.jpg
     title: Portrait de femme
-  - src: /assets/images/portfolio/Portrait-F-4.jpg
+  - src: /assets/images/portfolio/Portrait-H-1.jpg
     title: Portrait de femme
-  - src: /assets/images/portfolio/Portrait-F-5.jpg
+  - src: /assets/images/portfolio/Portrait-F-4.jpg
     title: Portrait de femme
   - src: /assets/images/portfolio/Portrait-F-6.jpg
     title: Portrait de femme
-  - src: /assets/images/portfolio/Portrait-H-1.jpg
-    title: Portrait d'homme
   - src: /assets/images/portfolio/Portrait-H-2.jpg
     title: Portrait d'homme
   - src: /assets/images/portfolio/Portrait-H-3.jpg
+    title: Portrait d'homme
+  - src: /assets/images/portfolio/Portrait-F-5.jpg
     title: Portrait d'homme
   - src: /assets/images/portfolio/Portrait-H-4.jpg
     title: Portrait d'homme
