@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://studiofluo.fr/portfolio/2020-06-01-cartes</loc>
-<lastmod>2020-06-01T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://studiofluo.fr/portfolio/2020-12-10-robin-gueguen</loc>
 <lastmod>2020-12-10T00:00:00+00:00</lastmod>
 </url>
@@ -56,6 +52,6 @@
 </url>
 <url>
 <loc>https://studiofluo.fr/admin/</loc>
-<lastmod>2022-10-21T21:32:33+00:00</lastmod>
+<lastmod>2022-10-21T21:38:23+00:00</lastmod>
 </url>
 </urlset>
