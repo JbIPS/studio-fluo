@@ -1,11 +1,14 @@
 ---
-title: Illustration	
-image: /assets/images/illustrations/illus.png
-excerpt: |
-  Design textile  
-  Aquarelles personalisées
+title: Photo
+image: /assets/images/uploads/photo.png
+excerpt:
+  - Portrait
+  - packshot
+  - reportage
+  - culinaire
 color: magenta
+active: true
 ---
-Finalement, pour sortir du lot, quoi de mieux qu'une **illustration unique** ? Qu'il s'agisse d'un design pour vos goodies, une icônographie pour votre site ou tout simplement d'un poster, vos envies sont les bienvenues ! À vous de définir le style et le thème, je me charge du reste.
+Que ce soit pour un reportage, un portrait qui vous ressemble ou la mise en scène d'objets je met mon expérience photographique et humaine à votre service.
 
-En plus des outils de **dessin numérique**, j'aime travailler avec l'**aquarelle** et garder le contact avec le papier. Vous cherchez une **carte personnalisée** et unique ? C'est ici qu'elle se trouve !
+Retrouvez chaque mois mes portraits de personnes inspirantes et mes tutoriels photos dans le magazine [Agir à Lyon](https://agiralyon.fr/a-lyon-un-magazine-pour-agir-ecologie/).
