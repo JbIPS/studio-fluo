@@ -1,11 +1,11 @@
 ---
 title: Photo
 image: /assets/images/uploads/photo.png
-excerpt:
-  - Portrait
-  - packshot
-  - reportage
-  - culinaire
+excerpt: |
+  Portrait
+  Packshot
+  Reportage
+  Culinaire
 color: magenta
 active: true
 ---
