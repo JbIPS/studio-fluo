@@ -16,6 +16,9 @@ layout: page
           <div class="col-12 col-lg-8">
             {{ content }}
           </div>
+					{% if page.iframe %}
+					{{ page.iframe }}
+					{% endif %}
         </div>
         <div class="row mt-3" data-bs-toggle="modal" data-bs-target="#lightbox">
           {% for image in page.gallery %}
