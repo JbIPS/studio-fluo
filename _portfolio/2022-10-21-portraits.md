@@ -20,7 +20,7 @@ gallery:
     title: Portrait de femme
   - src: /assets/images/portfolio/Portrait-F-5.jpg
     title: Portrait d'homme
-  - src: /assets/images/portfolio/Portrait-F-7.jpg
+  - src: /assets/images/portfolio/Portrait-F-3.jpg
     title: Portrait de femme
 ---
 Pour votre profil LinkedIn ou tout autre plateforme, une belle photo est primordiale pour assurer votre présence en ligne. Car l'exercice de modèle n'est souvent pas facile, mon expertise est d'abord de vous mettre à l'aise pour saisir l'image qui vous ressemble.
