@@ -6,7 +6,7 @@ image: /assets/images/uploads/stan_coreus.jpg
 tags:
   - Vidéo
 gallery:
-  - src: <iframe
+  - src: <iframe>
       src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6976616456230707200"
       allowfullscreen="" title="Post intégré" width="504" height="736"
       frameborder="0"></iframe>
