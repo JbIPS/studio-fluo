@@ -4,12 +4,14 @@ title: Robin Gueguen
 description: Le plein d'énergie avec l'impro
 image: /assets/images/uploads/rg-piste1-déclinaison2-small.webp
 tags:
-- Graphisme
+  - Graphisme
 gallery:
-- src: /assets/images/portfolio/RG_2.jpg
-  title: Déclinaisons
-- src: /assets/images/portfolio/RG_3.jpg
-  title: Plaquette
+  - src: /assets/images/portfolio/RG_2.jpg
+    title: Déclinaisons
+  - src: /assets/images/portfolio/RG_3.jpg
+    title: Cartes de visite
+  - src: /assets/images/portfolio/RG_4.jpg
+    title: Brochure formations
 ---
 {: .mb-5}
 ### Création d'identité visuelle
