@@ -4,7 +4,6 @@ title: L'art des chauds
 description: Des thés et infusions 100% bio et territorial
 image: /assets/images/portfolio/LAdC-mockup etiquette.jpg
 tags: 
-- identité visuelle
 - Graphisme
 gallery:
 - src: /assets/images/portfolio/LAdC-mockup carte.jpg
