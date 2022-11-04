@@ -23,6 +23,7 @@ include:
   - _pages
 
 # Github Pages
+repository: JbIPS/studio-fluo 
 lsi: false
 safe: true
 incremental: false
